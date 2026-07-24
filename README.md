@@ -20,6 +20,13 @@ Open `index.html` in a browser — no server or build tooling required at view t
 `.github/workflows/refresh.yml` runs daily at 06:30 UTC (and on manual dispatch):
 fetch → auto-classify new models → rebuild `index.html` → commit if changed.
 
+API usage is two keyed requests per day (one per calendar-year window), well
+inside the 30/minute and 500/day limits. Viewing the dashboard costs zero API
+calls — the dataset is embedded in `index.html` at build time. The committed
+`data/rankings-*.json` files double as an archive independent of the API:
+OpenRouter's dataset starts at 2025-01-01 (earlier start dates are clamped),
+and each daily run re-downloads the full official history, so gaps self-heal.
+
 One-time setup after pushing to GitHub:
 
 1. Add a repository secret named `OPENROUTER_API_KEY` (Settings → Secrets and
