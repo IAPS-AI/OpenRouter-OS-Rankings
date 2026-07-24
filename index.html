@@ -323,16 +323,16 @@
     return Math.max(0, N - daysBack);
   }
 
-  // ---------- stat tiles (always full scope, trailing 7-day window) ----------
-  function tileValues(i) {
-    const w = aggregate('weights', 'ALL');
-    const o = aggregate('origin', 'ALL');
-    const wTot = w.reduce((t, s) => t + windowSum(s, i, 7), 0);
-    const oTot = o.reduce((t, s) => t + windowSum(s, i, 7), 0);
-    const get = (arr, k) => { const s = arr.find((x) => x.key === k); return s ? windowSum(s, i, 7) : 0; };
+  // ---------- stat tiles (follow filter, smoothing, and range selectors) ----------
+  function tileValues(i, w, filter) {
+    const wSeries = aggregate('weights', filter);
+    const oSeries = aggregate('origin', 'ALL');
+    const wTot = wSeries.reduce((t, s) => t + windowSum(s, i, w), 0);
+    const oTot = oSeries.reduce((t, s) => t + windowSum(s, i, w), 0);
+    const get = (arr, k) => { const s = arr.find((x) => x.key === k); return s ? windowSum(s, i, w) : 0; };
     // Chinese share of open-weight tokens needs a joint cut
     let cnOpen = 0, allOpen = 0;
-    for (let j = Math.max(0, i - 6); j <= i; j++) {
+    for (let j = Math.max(0, i - w + 1); j <= i; j++) {
       for (const [mi, tokens] of days[j]) {
         const m = models[mi];
         if (m.w !== 'o') continue;
@@ -341,26 +341,36 @@
       }
     }
     return {
-      open: wTot ? get(w, 'o') / wTot : 0,
-      cn: oTot ? get(o, 'CN') / oTot : 0,
-      us: oTot ? get(o, 'US') / oTot : 0,
+      open: wTot ? get(wSeries, 'o') / wTot : 0,
+      cn: oTot ? get(oSeries, 'CN') / oTot : 0,
+      us: oTot ? get(oSeries, 'US') / oTot : 0,
       cnOfOpen: allOpen ? cnOpen / allOpen : 0,
     };
   }
   function renderTiles() {
-    const now = tileValues(N - 1);
-    const back = N > 90 ? tileValues(N - 91) : null;
+    const w = state.smooth;
+    const filter = state.view === 'weights' ? state.filter : 'ALL';
+    const i1 = N - 1, i0 = rangeStart();
+    const now = tileValues(i1, w, filter);
+    const then = i0 < i1 ? tileValues(i0, w, filter) : null;
+    const shortDate = (d) => `${MONTHS[+d.slice(5, 7) - 1]} ${+d.slice(8)} '${d.slice(2, 4)}`;
+    const basis = w === 7 ? '7-day avg' : `on ${shortDate(dates[i1])}`;
+    const delta = (d) => d == null ? basis
+      : `<span class="dir">${d >= 0 ? '▲' : '▼'}</span> ${fmtPp(d)} since ${shortDate(dates[i0])} · ${basis}`;
+    const openLbl = filter !== 'ALL'
+      ? `Open-weight share · ${ORIGIN_NAME[filter]} models`
+      : 'Open-weight share of top-50 tokens';
     const tiles = [
-      { lbl: 'Open-weight share of top-50 tokens', v: now.open, d: back && now.open - back.open },
-      { lbl: 'Chinese-developed share', v: now.cn, d: back && now.cn - back.cn },
-      { lbl: 'U.S.-developed share', v: now.us, d: back && now.us - back.us },
-      { lbl: 'Chinese share of open-weight tokens', v: now.cnOfOpen, d: back && now.cnOfOpen - back.cnOfOpen },
+      { lbl: openLbl, v: now.open, d: then && now.open - then.open },
+      { lbl: 'Chinese-developed share', v: now.cn, d: then && now.cn - then.cn },
+      { lbl: 'U.S.-developed share', v: now.us, d: then && now.us - then.us },
+      { lbl: 'Chinese share of open-weight tokens', v: now.cnOfOpen, d: then && now.cnOfOpen - then.cnOfOpen },
     ];
     document.getElementById('tiles').innerHTML = tiles.map((t) => `
       <div class="tile">
         <span class="lbl">${t.lbl}</span>
         <span class="val">${fmtPct(t.v)}</span>
-        <span class="delta">${t.d == null ? 'trailing 7-day average' : `<span class="dir">${t.d >= 0 ? '▲' : '▼'}</span> ${fmtPp(t.d)} vs. 90 days ago`}</span>
+        <span class="delta">${delta(t.d)}</span>
       </div>`).join('');
   }
 
@@ -484,6 +494,7 @@
 
     geom = { i0, len, x, M, iw, series, vals, cum, crosshair: ch };
 
+    renderTiles();
     renderLegend(series, vals);
     renderTitles();
     renderTable(N - 1);
@@ -618,7 +629,6 @@
   let resizeTimer = null;
   new ResizeObserver(() => { clearTimeout(resizeTimer); resizeTimer = setTimeout(render, 80); }).observe(svg.parentElement);
 
-  renderTiles();
   renderMethod();
   render();
 })();
