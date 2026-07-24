@@ -1,0 +1,250 @@
+{
+ "alibaba": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Alibaba (Tongyi Lab)",
+  "models_seen": 1
+ },
+ "amazon": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Amazon",
+  "models_seen": 3
+ },
+ "anthracite-org": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Anthracite (community)",
+  "models_seen": 1
+ },
+ "anthropic": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Anthropic",
+  "models_seen": 18
+ },
+ "arcee-ai": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Arcee AI",
+  "models_seen": 2
+ },
+ "baai": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Beijing Academy of Artificial Intelligence (BAAI)",
+  "models_seen": 1
+ },
+ "bytedance-seed": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "ByteDance",
+  "models_seen": 1
+ },
+ "cognitivecomputations": {
+  "origin": "Other",
+  "origin_country": "France",
+  "developer": "Cognitive Computations (Eric Hartford)",
+  "models_seen": 1
+ },
+ "cohere": {
+  "origin": "Other",
+  "origin_country": "Canada",
+  "developer": "Cohere",
+  "models_seen": 5
+ },
+ "deepseek": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "DeepSeek",
+  "models_seen": 18
+ },
+ "google": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Google",
+  "models_seen": 43
+ },
+ "gryphe": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Gryphe (community)",
+  "models_seen": 1
+ },
+ "inclusionai": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Ant Group (inclusionAI)",
+  "models_seen": 3
+ },
+ "infermatic": {
+  "origin": "Other",
+  "origin_country": "France",
+  "developer": "Infermatic",
+  "models_seen": 1
+ },
+ "intfloat": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Microsoft Research (E5)",
+  "models_seen": 1
+ },
+ "kwaipilot": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Kuaishou (Kwaipilot)",
+  "models_seen": 1
+ },
+ "liquid": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Liquid AI",
+  "models_seen": 3
+ },
+ "meta-llama": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Meta",
+  "models_seen": 12
+ },
+ "microsoft": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Microsoft",
+  "mixed": true,
+  "models_seen": 4
+ },
+ "minimax": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "MiniMax",
+  "models_seen": 6
+ },
+ "mistralai": {
+  "origin": "Other",
+  "origin_country": "France",
+  "developer": "Mistral AI",
+  "models_seen": 23
+ },
+ "moonshotai": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Moonshot AI",
+  "models_seen": 7
+ },
+ "neversleep": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "NeverSleep (community)",
+  "models_seen": 1
+ },
+ "nex-agi": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Nex AGI (Shanghai Innovation Institute alliance)",
+  "models_seen": 2
+ },
+ "nousresearch": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Nous Research",
+  "models_seen": 3
+ },
+ "nvidia": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "NVIDIA",
+  "models_seen": 5
+ },
+ "openai": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "OpenAI",
+  "models_seen": 43
+ },
+ "openchat": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "OpenChat (Tsinghua-affiliated team)",
+  "models_seen": 1
+ },
+ "openrouter": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "OpenAI",
+  "mixed": true,
+  "models_seen": 18
+ },
+ "perplexity": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Perplexity",
+  "models_seen": 1
+ },
+ "poolside": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Poolside",
+  "models_seen": 4
+ },
+ "qwen": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Alibaba (Qwen)",
+  "models_seen": 44
+ },
+ "sao10k": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "Sao10K (community)",
+  "models_seen": 3
+ },
+ "sentence-transformers": {
+  "origin": "Other",
+  "origin_country": "Germany",
+  "developer": "Sentence-Transformers (UKP Lab, TU Darmstadt / Hugging Face community)",
+  "models_seen": 1
+ },
+ "stepfun": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "StepFun",
+  "models_seen": 2
+ },
+ "tencent": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Tencent",
+  "models_seen": 2
+ },
+ "thedrummer": {
+  "origin": "Other",
+  "origin_country": "France",
+  "developer": "TheDrummer (community)",
+  "models_seen": 2
+ },
+ "tngtech": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "TNG Technology Consulting",
+  "models_seen": 3
+ },
+ "x-ai": {
+  "origin": "US",
+  "origin_country": "United States",
+  "developer": "xAI",
+  "models_seen": 11
+ },
+ "xiaomi": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Xiaomi",
+  "models_seen": 5
+ },
+ "z-ai": {
+  "origin": "China",
+  "origin_country": "China",
+  "developer": "Zhipu AI (Z.ai)",
+  "models_seen": 11
+ }
+}
