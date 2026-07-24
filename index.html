@@ -347,14 +347,14 @@
       cnOfOpen: allOpen ? cnOpen / allOpen : 0,
     };
   }
-  function renderTiles() {
+  function renderTiles(anchor = N - 1) {
     const w = state.smooth;
     const filter = state.view === 'weights' ? state.filter : 'ALL';
-    const i1 = N - 1, i0 = rangeStart();
+    const i1 = anchor, i0 = rangeStart();
     const now = tileValues(i1, w, filter);
     const then = i0 < i1 ? tileValues(i0, w, filter) : null;
     const shortDate = (d) => `${MONTHS[+d.slice(5, 7) - 1]} ${+d.slice(8)} '${d.slice(2, 4)}`;
-    const basis = w === 7 ? '7-day avg' : `on ${shortDate(dates[i1])}`;
+    const basis = `${w === 7 ? '7-day avg to' : 'on'} ${shortDate(dates[i1])}`;
     const delta = (d) => d == null ? basis
       : `<span class="dir">${d >= 0 ? '▲' : '▼'}</span> ${fmtPp(d)} since ${shortDate(dates[i0])} · ${basis}`;
     const openLbl = filter !== 'ALL'
@@ -548,6 +548,7 @@
     for (const [mi, v] of days[i]) if (pred(models[mi])) return { m: models[mi], v };
     return null;
   }
+  let hoverIdx = -1;
   function onMove(ev) {
     if (!geom) return;
     const rect = svg.getBoundingClientRect();
@@ -560,6 +561,7 @@
     const cx = geom.x(li);
     geom.crosshair.setAttribute('x1', cx); geom.crosshair.setAttribute('x2', cx);
     geom.crosshair.setAttribute('visibility', 'visible');
+    if (ai !== hoverIdx) { hoverIdx = ai; renderTiles(ai); renderTable(ai); }
 
     const rowsHtml = geom.series.map((s, si) => {
       const v = geom.vals[si][li];
@@ -580,11 +582,11 @@
     const left = ev.clientX + 16 + tw > window.innerWidth ? ev.clientX - tw - 14 : ev.clientX + 14;
     tooltip.style.left = left + 'px';
     tooltip.style.top = Math.min(window.innerHeight - tooltip.offsetHeight - 10, ev.clientY + 12) + 'px';
-    renderTable(ai);
   }
   function onLeave() {
     tooltip.classList.remove('show');
-    if (geom) { geom.crosshair.setAttribute('visibility', 'hidden'); renderTable(N - 1); }
+    hoverIdx = -1;
+    if (geom) { geom.crosshair.setAttribute('visibility', 'hidden'); renderTiles(); renderTable(N - 1); }
   }
   svg.addEventListener('pointermove', onMove);
   svg.addEventListener('pointerleave', onLeave);
