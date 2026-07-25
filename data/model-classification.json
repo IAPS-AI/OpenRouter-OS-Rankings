@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-24",
+ "generated": "2026-07-25",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -8,34 +8,50 @@
  ],
  "models": [
   {
-   "base": "deepseek/deepseek-v4-flash",
-   "developer": "DeepSeek",
+   "base": "alibaba/tongyi-deepresearch-30b-a3b",
+   "developer": "Alibaba (Tongyi Lab)",
    "origin": "China",
    "origin_country": "China",
    "weights": "open",
    "confidence": "high",
-   "note": "Epoch exact match, open weights unrestricted; HF repo deepseek-ai/DeepSeek-V4-Flash"
+   "note": "Weights on Hugging Face (Alibaba-NLP/Tongyi-DeepResearch-30B-A3B, Apache 2.0)"
   },
   {
-   "base": "xiaomi/mimo-v2.5",
-   "developer": "Xiaomi",
+   "base": "amazon/nova-lite-v1",
+   "developer": "Amazon",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "amazon/nova-micro-v1",
+   "developer": "Amazon",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "amazon/nova-pro-v1",
+   "developer": "Amazon",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "anthracite-org/magnum-v4-72b",
+   "developer": "Anthracite (community)",
    "origin": "China",
    "origin_country": "China",
    "weights": "open",
+   "finetune_of": "Qwen 2.5",
    "confidence": "high",
-   "note": "Epoch exact match, open weights; HF repo XiaomiMiMo/MiMo-V2.5"
+   "note": "Community finetune of Qwen2.5-72B; origin set to base developer (Alibaba, China)"
   },
   {
-   "base": "tencent/hy3-preview",
-   "developer": "Tencent",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Tencent Hunyuan 3 preview; HF repo tencent/Hy3-preview"
-  },
-  {
-   "base": "anthropic/claude-4.6-sonnet",
+   "base": "anthropic/claude-3-5-haiku",
    "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
@@ -43,25 +59,7 @@
    "confidence": "high"
   },
   {
-   "base": "minimax/minimax-m3",
-   "developer": "MiniMax",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Weights on HF (MiniMaxAI/MiniMax-M3) since 2026-06-07; Epoch row predates the weight release. Web-verified 2026-07-24."
-  },
-  {
-   "base": "google/gemini-3-flash-preview",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Gemini series API-only"
-  },
-  {
-   "base": "anthropic/claude-4.7-opus",
+   "base": "anthropic/claude-3-7-sonnet",
    "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
@@ -69,70 +67,7 @@
    "confidence": "high"
   },
   {
-   "base": "deepseek/deepseek-v3.2",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Epoch exact match, open weights unrestricted"
-  },
-  {
-   "base": "google/gemini-2.5-flash",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Gemini series API-only; Epoch exact match API access"
-  },
-  {
-   "base": "deepseek/deepseek-v4-pro",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Epoch exact match, open weights unrestricted"
-  },
-  {
-   "base": "tencent/hy3",
-   "developer": "Tencent",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo tencent/Hy3; 295B MoE open release"
-  },
-  {
-   "base": "x-ai/grok-code-fast-1",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "xAI API-only coding model; weights never released"
-  },
-  {
-   "base": "google/gemini-2.5-flash-lite",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Epoch exact match, API access"
-  },
-  {
-   "base": "minimax/minimax-m2.5",
-   "developer": "MiniMax",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Epoch exact match, open weights unrestricted"
-  },
-  {
-   "base": "anthropic/claude-4.5-sonnet",
+   "base": "anthropic/claude-3-haiku",
    "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
@@ -140,34 +75,7 @@
    "confidence": "high"
   },
   {
-   "base": "openrouter/owl-alpha",
-   "developer": "Meituan",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Stealth model revealed 2026-06-30 as Meituan LongCat-2.0, open-license 1.6T MoE (web-confirmed via multiple sources incl. tech.yahoo.com and dayverse.id)"
-  },
-  {
-   "base": "z-ai/glm-5.2",
-   "developer": "Z.ai (Zhipu AI)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Epoch exact match, open weights unrestricted; HF repo zai-org/GLM-5.2"
-  },
-  {
-   "base": "openai/gpt-oss-120b",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "OpenAI open-weight release, Aug 2025"
-  },
-  {
-   "base": "anthropic/claude-4.6-opus",
+   "base": "anthropic/claude-3-opus",
    "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
@@ -175,7 +83,7 @@
    "confidence": "high"
   },
   {
-   "base": "anthropic/claude-4.8-opus",
+   "base": "anthropic/claude-3-sonnet",
    "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
@@ -183,43 +91,39 @@
    "confidence": "high"
   },
   {
-   "base": "x-ai/grok-4.1-fast",
-   "developer": "xAI",
+   "base": "anthropic/claude-3.5-sonnet",
+   "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
-   "confidence": "high",
-   "note": "Epoch exact match, API access; Grok 3+ series weights not released"
+   "confidence": "high"
   },
   {
-   "base": "google/gemini-2.0-flash-001",
-   "developer": "Google",
+   "base": "anthropic/claude-4-opus",
+   "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
-   "confidence": "high",
-   "note": "Gemini series API-only"
-  },
-  {
-   "base": "openai/gpt-4o-mini",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Epoch exact match, API access"
-  },
-  {
-   "base": "stepfun/step-3.5-flash",
-   "developer": "StepFun",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Open-source MoE per catalog; HF repo stepfun-ai/Step-3.5-Flash"
+   "confidence": "high"
   },
   {
    "base": "anthropic/claude-4-sonnet",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "anthropic/claude-4.1-opus",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "anthropic/claude-4.5-haiku",
    "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
@@ -235,30 +139,60 @@
    "confidence": "high"
   },
   {
-   "base": "google/gemini-3.5-flash",
-   "developer": "Google",
+   "base": "anthropic/claude-4.5-sonnet",
+   "developer": "Anthropic",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
-   "confidence": "high",
-   "note": "Epoch exact match: API access"
-  },
-  {
-   "base": "qwen/qwen3-235b-a22b-07-25",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
    "confidence": "high"
   },
   {
-   "base": "z-ai/glm-5-turbo",
-   "developer": "Z.ai (Zhipu AI)",
-   "origin": "China",
-   "origin_country": "China",
+   "base": "anthropic/claude-4.6-opus",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
    "weights": "closed",
-   "confidence": "low",
-   "note": "GLM-5 base is open-weight, but GLM-5 Turbo appears to be a proprietary API-only companion model (no HF release found); single secondary source, needs verification"
+   "confidence": "high"
+  },
+  {
+   "base": "anthropic/claude-4.6-sonnet",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "anthropic/claude-4.7-opus",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "anthropic/claude-4.8-opus",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "anthropic/claude-5-fable",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "anthropic/claude-sonnet-5",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
   },
   {
    "base": "arcee-ai/trinity-large-preview",
@@ -270,18 +204,570 @@
    "note": "Weights released on Hugging Face (arcee-ai/Trinity-Large-Preview) under Apache 2.0; 398B sparse MoE"
   },
   {
-   "base": "openai/gpt-4.1-mini-2025-04-14",
-   "developer": "OpenAI",
+   "base": "arcee-ai/trinity-large-thinking",
+   "developer": "Arcee AI",
    "origin": "US",
    "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Open-source reasoning model on HF (arcee-ai/Trinity-Large-Thinking)."
+  },
+  {
+   "base": "baai/bge-m3",
+   "developer": "Beijing Academy of Artificial Intelligence (BAAI)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Open-weight embedding model (BAAI/bge-m3 on Hugging Face, MIT license); catalog entry delisted"
+  },
+  {
+   "base": "bytedance-seed/seed-2.0-mini",
+   "developer": "ByteDance",
+   "origin": "China",
+   "origin_country": "China",
    "weights": "closed",
+   "confidence": "low",
+   "note": "ByteDance Seed 2.0 series served via API (Volcano Engine); no HF id and no known weight release, but model postdates knowledge cutoff — verify"
+  },
+  {
+   "base": "cognitivecomputations/dolphin-mixtral-8x22b",
+   "developer": "Cognitive Computations (Eric Hartford)",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "finetune_of": "Mixtral 8x22B",
+   "confidence": "high",
+   "note": "Community finetune of Mistral's Mixtral 8x22B; origin set to base developer country"
+  },
+  {
+   "base": "cohere/command-r",
+   "developer": "Cohere",
+   "origin": "Other",
+   "origin_country": "Canada",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Command R weights on Hugging Face (CohereForAI/c4ai-command-r-v01, CC-BY-NC non-commercial)"
+  },
+  {
+   "base": "cohere/command-r-08-2024",
+   "developer": "Cohere",
+   "origin": "Other",
+   "origin_country": "Canada",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Weights released as CohereForAI/c4ai-command-r-08-2024 on Hugging Face (CC-BY-NC)"
+  },
+  {
+   "base": "cohere/command-r-plus-08-2024",
+   "developer": "Cohere",
+   "origin": "Other",
+   "origin_country": "Canada",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Weights released as CohereForAI/c4ai-command-r-plus-08-2024 (CC-BY-NC); Epoch: open weights non-commercial"
+  },
+  {
+   "base": "cohere/command-r7b-12-2024",
+   "developer": "Cohere",
+   "origin": "Other",
+   "origin_country": "Canada",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Weights released on HF as CohereForAI/c4ai-command-r7b-12-2024 (CC-BY-NC)"
+  },
+  {
+   "base": "cohere/north-mini-code",
+   "developer": "Cohere",
+   "origin": "Other",
+   "origin_country": "Canada",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Open-weight release (CohereLabs/North-Mini-Code-1.0), unlike Cohere's API-only Command line"
+  },
+  {
+   "base": "deepseek/deepseek-chat-v3",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
    "confidence": "high"
+  },
+  {
+   "base": "deepseek/deepseek-chat-v3-0324",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo deepseek-ai/DeepSeek-V3-0324, MIT-licensed open weights"
   },
   {
    "base": "deepseek/deepseek-chat-v3.1",
    "developer": "DeepSeek",
    "origin": "China",
    "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "deepseek/deepseek-r1",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "deepseek/deepseek-r1-0528",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "deepseek/deepseek-r1-0528-qwen3-8b",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "DeepSeek's own R1-0528 distillation onto Qwen3-8B; weights on Hugging Face (MIT)"
+  },
+  {
+   "base": "deepseek/deepseek-r1-distill-llama-70b",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Official DeepSeek distillation of R1 onto Llama-3.3-70B; classified to DeepSeek (China) as developer."
+  },
+  {
+   "base": "deepseek/deepseek-r1-distill-llama-8b",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Official DeepSeek distillation onto Llama 3.1 8B; developed and released by DeepSeek, not a community finetune"
+  },
+  {
+   "base": "deepseek/deepseek-r1-distill-qwen-14b",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "DeepSeek distillation onto Qwen2.5-14B, open weights (MIT); exact Epoch match"
+  },
+  {
+   "base": "deepseek/deepseek-r1-distill-qwen-32b",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Exact Epoch match, open weights (unrestricted)"
+  },
+  {
+   "base": "deepseek/deepseek-r1-zero",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "DeepSeek-R1-Zero weights released on Hugging Face alongside R1 (Jan 2025)"
+  },
+  {
+   "base": "deepseek/deepseek-v3-base",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "DeepSeek-V3-Base weights on Hugging Face"
+  },
+  {
+   "base": "deepseek/deepseek-v3.1-terminus",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "deepseek/deepseek-v3.2",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Epoch exact match, open weights unrestricted"
+  },
+  {
+   "base": "deepseek/deepseek-v3.2-exp",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "deepseek/deepseek-v3.2-speciale",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "DeepSeek-V3.2 family released Dec 2025 with open weights per Epoch (unrestricted)"
+  },
+  {
+   "base": "deepseek/deepseek-v4-flash",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Epoch exact match, open weights unrestricted; HF repo deepseek-ai/DeepSeek-V4-Flash"
+  },
+  {
+   "base": "deepseek/deepseek-v4-pro",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Epoch exact match, open weights unrestricted"
+  },
+  {
+   "base": "google/gemini-2.0-flash-001",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Gemini series API-only"
+  },
+  {
+   "base": "google/gemini-2.0-flash-exp",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.0-flash-lite-001",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.0-flash-lite-preview-02-05",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.0-flash-thinking-exp-01-21",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.0-flash-thinking-exp-1219",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Experimental Gemini reasoning model, API-only"
+  },
+  {
+   "base": "google/gemini-2.0-pro-exp-02-05",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Experimental API/preview release; weights never published."
+  },
+  {
+   "base": "google/gemini-2.5-flash",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Gemini series API-only; Epoch exact match API access"
+  },
+  {
+   "base": "google/gemini-2.5-flash-image-preview",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Gemini API-only (Nano Banana image model)"
+  },
+  {
+   "base": "google/gemini-2.5-flash-lite",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Epoch exact match, API access"
+  },
+  {
+   "base": "google/gemini-2.5-flash-lite-preview-06-17",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.5-flash-lite-preview-09-2025",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.5-flash-preview-04-17",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.5-flash-preview-05-20",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.5-flash-preview-09-2025",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.5-pro",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.5-pro-exp-03-25",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.5-pro-preview-03-25",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-2.5-pro-preview-06-05",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-3-flash-preview",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Gemini series API-only"
+  },
+  {
+   "base": "google/gemini-3-pro-preview",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-3.1-flash-lite",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-3.1-flash-lite-preview",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-3.1-pro-preview",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-3.1-pro-preview-customtools",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-3.5-flash",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Epoch exact match: API access"
+  },
+  {
+   "base": "google/gemini-3.6-flash",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-embedding-001",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Embedding model, API-only"
+  },
+  {
+   "base": "google/gemini-exp-1206",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Experimental Gemini API-only checkpoint (precursor to Gemini 2.0 Pro)"
+  },
+  {
+   "base": "google/gemini-flash-1.5",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-flash-1.5-8b",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-flash-1.5-exp",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-pro-1.5",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemini-pro-1.5-exp",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemma-2-27b-it",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemma-2-9b-it",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemma-3-12b-it",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemma-3-27b-it",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemma-3-4b-it",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "google/gemma-3n-e4b-it",
+   "developer": "Google DeepMind",
+   "origin": "US",
+   "origin_country": "United States",
    "weights": "open",
    "confidence": "high"
   },
@@ -304,64 +790,261 @@
    "note": "Gemma family open-weight release (restricted-use license)"
   },
   {
-   "base": "anthropic/claude-sonnet-5",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "anthropic/claude-3.5-sonnet",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-5-nano-2025-08-07",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-5.4-mini",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "z-ai/glm-4.7",
-   "developer": "Z.ai (Zhipu AI)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "z-ai/glm-4.5-air",
-   "developer": "Z.ai (Zhipu AI)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-3-pro-preview",
+   "base": "google/learnlm-1.5-pro-experimental",
    "developer": "Google",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
+   "confidence": "high",
+   "note": "Experimental education-tuned Gemini 1.5 Pro variant, API-only"
+  },
+  {
+   "base": "gryphe/mythomax-l2-13b",
+   "developer": "Gryphe (community)",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "finetune_of": "Llama 2",
+   "confidence": "high",
+   "note": "Community merge of Llama 2 13B; origin follows base model developer Meta (US)."
+  },
+  {
+   "base": "inclusionai/ling-2.6-1t",
+   "developer": "Ant Group (inclusionAI)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Weights on HF (inclusionAI/Ling-2.6-1T, MIT) despite catalog lacking HF id"
+  },
+  {
+   "base": "inclusionai/ling-2.6-flash",
+   "developer": "Ant Group (inclusionAI)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Weights on HF (inclusionAI/Ling-2.6-flash) despite null catalog hf id"
+  },
+  {
+   "base": "inclusionai/ling-3.0-flash",
+   "developer": "Ant Group (inclusionAI)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-07-25: no hugging_face_id in catalog"
+  },
+  {
+   "base": "inclusionai/ring-2.6-1t",
+   "developer": "InclusionAI (Ant Group)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "MIT-licensed open weights at inclusionAI/Ring-2.6-1T on HF despite missing catalog HF id"
+  },
+  {
+   "base": "infermatic/mn-inferor-12b",
+   "developer": "Infermatic",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "finetune_of": "Mistral Nemo",
+   "confidence": "high",
+   "note": "Community merge of Mistral Nemo 12B derivatives (MN = Mistral Nemo); weights on HF"
+  },
+  {
+   "base": "intfloat/multilingual-e5-large",
+   "developer": "Microsoft Research (E5)",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Embedding model; weights on Hugging Face (intfloat/multilingual-e5-large), MIT license"
+  },
+  {
+   "base": "kwaipilot/kat-coder-pro-v1",
+   "developer": "Kuaishou (Kwaipilot)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "KAT-Coder-Pro is proprietary, served via Kuaishou StreamLake API; only the separate KAT-Dev variants are open-weight"
+  },
+  {
+   "base": "liquid/lfm-3b",
+   "developer": "Liquid AI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "LFM1-series models were API/on-prem only; only the later LFM2 series is open-weight"
+  },
+  {
+   "base": "liquid/lfm-40b",
+   "developer": "Liquid AI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "LFM-40B MoE served via API/on-prem only; weights never publicly released"
+  },
+  {
+   "base": "liquid/lfm-7b",
+   "developer": "Liquid AI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "low",
+   "note": "LFM-7B (Jan 2025) was proprietary/API-hosted; Liquid only opened weights starting with LFM2 — verify no later weight release"
+  },
+  {
+   "base": "meta-llama/llama-3-70b-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Llama 3 70B Instruct, open weights under Llama license"
+  },
+  {
+   "base": "meta-llama/llama-3-8b-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
    "confidence": "high"
   },
   {
-   "base": "qwen/qwen3-coder-480b-a35b-07-25",
-   "developer": "Alibaba (Qwen)",
+   "base": "meta-llama/llama-3.1-405b-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-3.1-70b-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-3.1-8b-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-3.2-11b-vision-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-3.2-1b-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-3.2-3b-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-3.3-70b-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-4-maverick-17b-128e-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-4-scout-17b-16e-instruct",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "meta-llama/llama-guard-3-8b",
+   "developer": "Meta",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Safety classifier based on Llama 3.1 8B, weights on HF"
+  },
+  {
+   "base": "microsoft/mai-ds-r1",
+   "developer": "Microsoft",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "finetune_of": "DeepSeek R1",
+   "confidence": "high",
+   "note": "Microsoft AI post-trained DeepSeek R1; weights open on Hugging Face (microsoft/MAI-DS-R1); origin set to base model developer (DeepSeek, China) per finetune rule"
+  },
+  {
+   "base": "microsoft/phi-4",
+   "developer": "Microsoft",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "microsoft/wizardlm-2-7b",
+   "developer": "Microsoft",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "low",
+   "note": "WizardLM-2 weights released Apr 2024 then retracted by Microsoft; community mirrors remain downloadable"
+  },
+  {
+   "base": "microsoft/wizardlm-2-8x22b",
+   "developer": "Microsoft",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "finetune_of": "Mixtral 8x22B",
+   "confidence": "high",
+   "note": "Microsoft AI finetune of Mistral's Mixtral 8x22B; weights on HF (briefly pulled in 2024, mirrors remain downloadable)."
+  },
+  {
+   "base": "minimax/minimax-01",
+   "developer": "MiniMax",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "minimax/minimax-m2",
+   "developer": "MiniMax",
    "origin": "China",
    "origin_country": "China",
    "weights": "open",
@@ -376,91 +1059,239 @@
    "confidence": "high"
   },
   {
-   "base": "openai/gpt-5.2",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-oss-20b",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Open-weight Apache 2.0 release by OpenAI"
-  },
-  {
-   "base": "openai/gpt-5.3-codex",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "minimax/minimax-m2",
+   "base": "minimax/minimax-m2.5",
    "developer": "MiniMax",
    "origin": "China",
    "origin_country": "China",
    "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-5.4-nano",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "tngtech/deepseek-r1t2-chimera",
-   "developer": "TNG Technology Consulting",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "finetune_of": "DeepSeek R1",
    "confidence": "high",
-   "note": "German firm TNG's merge of DeepSeek R1 variants; origin set to base model developer country (China) per rules"
+   "note": "Epoch exact match, open weights unrestricted"
   },
   {
-   "base": "openai/gpt-5-2025-08-07",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "x-ai/grok-4-07-09",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Grok 4 (July 2025), API-only; no weights release as of Jul 2026"
-  },
-  {
-   "base": "tngtech/deepseek-r1t-chimera",
-   "developer": "TNG Technology Consulting",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "finetune_of": "DeepSeek R1",
-   "confidence": "high",
-   "note": "German-made merge of DeepSeek R1 and V3; origin follows base model developer (DeepSeek, China); weights on HF"
-  },
-  {
-   "base": "inclusionai/ling-2.6-flash",
-   "developer": "Ant Group (inclusionAI)",
+   "base": "minimax/minimax-m2.7",
+   "developer": "MiniMax",
    "origin": "China",
    "origin_country": "China",
    "weights": "open",
    "confidence": "high",
-   "note": "Weights on HF (inclusionAI/Ling-2.6-flash) despite null catalog hf id"
+   "note": "HF repo MiniMaxAI/MiniMax-M2.7; Epoch: open weights (non-commercial)"
+  },
+  {
+   "base": "minimax/minimax-m3",
+   "developer": "MiniMax",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Weights on HF (MiniMaxAI/MiniMax-M3) since 2026-06-07; Epoch row predates the weight release. Web-verified 2026-07-24."
+  },
+  {
+   "base": "mistralai/codestral-2501",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Codestral 25.01 is API/enterprise-only; unlike original Codestral 22B, weights were not publicly released"
+  },
+  {
+   "base": "mistralai/codestral-2508",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "closed",
+   "confidence": "low",
+   "note": "Codestral 25.08 served via Mistral API/enterprise deployment; no public weight download found, though Epoch fuzzy row lists a non-commercial open-weights Codestral dated 2025-07-30 — needs verification"
+  },
+  {
+   "base": "mistralai/devstral-2512",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "mistralai/devstral-small-2505",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Devstral Small 2505 released under Apache 2.0 on Hugging Face (mistralai/Devstral-Small-2505); catalog delisted"
+  },
+  {
+   "base": "mistralai/devstral-small-2507",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Devstral Small 1.1 (2507) weights on Hugging Face under Apache 2.0"
+  },
+  {
+   "base": "mistralai/ministral-14b-2512",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "mistralai/ministral-3b",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Ministral 3B is API-only; only the 8B sibling had research weights released. Epoch exact match: API access"
+  },
+  {
+   "base": "mistralai/ministral-8b",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Ministral 8B weights downloadable under Mistral Research License (open-weight, non-commercial)"
+  },
+  {
+   "base": "mistralai/ministral-8b-2512",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "mistralai/mistral-7b-instruct",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Apache-2.0 open weights on HF (mistralai/Mistral-7B-Instruct)."
+  },
+  {
+   "base": "mistralai/mistral-7b-instruct-v0.3",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "mistralai/mistral-large-2407",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Mistral-Large-Instruct-2407 weights on Hugging Face under Mistral Research License"
+  },
+  {
+   "base": "mistralai/mistral-large-2411",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Mistral Large 2 (2411) weights on Hugging Face under Mistral Research License (open-weight, non-commercial)"
+  },
+  {
+   "base": "mistralai/mistral-large-2512",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Mistral Large 3 (675B MoE) released under Apache 2.0 with downloadable weights per catalog description"
+  },
+  {
+   "base": "mistralai/mistral-medium-3.5",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Mistral Medium line is API-only; no weights release"
+  },
+  {
+   "base": "mistralai/mistral-nemo",
+   "developer": "Mistral AI (with NVIDIA)",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo mistralai/Mistral-Nemo-Instruct-2407, Apache 2.0"
+  },
+  {
+   "base": "mistralai/mistral-small",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "low",
+   "note": "Unversioned slug; current Mistral Small (22B v24.09, Small 3.x) weights are open, but the original 2402 Mistral Small was API-only — depends which checkpoint the slug served"
+  },
+  {
+   "base": "mistralai/mistral-small-24b-instruct-2501",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Apache 2.0 release"
+  },
+  {
+   "base": "mistralai/mistral-small-3.1-24b-instruct-2503",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "mistralai/mistral-small-3.2-24b-instruct-2506",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "mistralai/mistral-tiny",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "mistral-tiny API endpoint serves Mistral 7B Instruct, an open-weight model"
+  },
+  {
+   "base": "mistralai/mixtral-8x22b-instruct",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Apache 2.0 open weights"
+  },
+  {
+   "base": "mistralai/mixtral-8x7b-instruct",
+   "developer": "Mistral AI",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "moonshotai/kimi-k2",
+   "developer": "Moonshot AI",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
   },
   {
    "base": "moonshotai/kimi-k2-0905",
@@ -471,32 +1302,308 @@
    "confidence": "high"
   },
   {
-   "base": "qwen/qwen3-vl-235b-a22b-instruct",
-   "developer": "Alibaba (Qwen)",
+   "base": "moonshotai/kimi-k2-thinking",
+   "developer": "Moonshot AI",
    "origin": "China",
    "origin_country": "China",
    "weights": "open",
    "confidence": "high"
   },
   {
-   "base": "anthropic/claude-3-5-haiku",
-   "developer": "Anthropic",
+   "base": "moonshotai/kimi-k2.5-0127",
+   "developer": "Moonshot AI",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo moonshotai/Kimi-K2.5; Epoch lists open weights (unrestricted)"
+  },
+  {
+   "base": "moonshotai/kimi-k2.6",
+   "developer": "Moonshot AI",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo moonshotai/Kimi-K2.6; Epoch exact: open weights (unrestricted)"
+  },
+  {
+   "base": "moonshotai/kimi-k2.7-code",
+   "developer": "Moonshot AI",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "moonshotai/kimi-k3",
+   "developer": "Moonshot AI",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "low",
+   "note": "Released July 16, 2026 via API; open-weight release committed for July 27, 2026 but weights not downloadable as of July 24 — will flip to open days after this classification"
+  },
+  {
+   "base": "neversleep/llama-3-lumimaid-8b",
+   "developer": "NeverSleep (community)",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "finetune_of": "Llama 3",
+   "confidence": "high",
+   "note": "Community roleplay finetune of Meta Llama 3 8B; origin follows base developer (Meta, US)"
+  },
+  {
+   "base": "nex-agi/deepseek-v3.1-nex-n1",
+   "developer": "Nex AGI (Shanghai Innovation Institute alliance)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "finetune_of": "DeepSeek V3.1",
+   "confidence": "high",
+   "note": "Post-trained DeepSeek-V3.1 by Nex-AGI (Shanghai); weights on HF (nex-agi/DeepSeek-V3.1-Nex-N1)."
+  },
+  {
+   "base": "nex-agi/nex-n2-pro",
+   "developer": "Nex AGI (Shanghai Innovation Institute alliance)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "finetune_of": "Qwen3.5",
+   "confidence": "high",
+   "note": "Apache 2.0 on HF; post-trained on Alibaba's Qwen3.5-397B-A17B base"
+  },
+  {
+   "base": "nousresearch/hermes-2-pro-llama-3-8b",
+   "developer": "Nous Research",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "finetune_of": "Llama 3",
+   "confidence": "high",
+   "note": "Nous Research (US) finetune of Llama 3 8B; base developer also US"
+  },
+  {
+   "base": "nousresearch/hermes-3-llama-3.1-405b",
+   "developer": "Nous Research",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "finetune_of": "Llama 3.1",
+   "confidence": "high",
+   "note": "Community finetune of Meta Llama 3.1 405B; Nous Research is also US-based"
+  },
+  {
+   "base": "nousresearch/hermes-3-llama-3.1-70b",
+   "developer": "Nous Research",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "finetune_of": "Llama 3.1",
+   "confidence": "high",
+   "note": "Nous Research finetune of Meta Llama 3.1 70B; base developer is US"
+  },
+  {
+   "base": "nvidia/llama-3.1-nemotron-70b-instruct",
+   "developer": "NVIDIA",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "finetune_of": "Llama 3.1",
+   "confidence": "high",
+   "note": "NVIDIA open-weight finetune of Llama 3.1 70B, on Hugging Face"
+  },
+  {
+   "base": "nvidia/nemotron-3-nano-30b-a3b",
+   "developer": "NVIDIA",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "nvidia/nemotron-3-super-120b-a12b",
+   "developer": "NVIDIA",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+  },
+  {
+   "base": "nvidia/nemotron-3-ultra-550b-a55b",
+   "developer": "NVIDIA",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16; Epoch: open weights"
+  },
+  {
+   "base": "nvidia/nemotron-nano-12b-v2-vl",
+   "developer": "NVIDIA",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/chatgpt-4o-latest",
+   "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
    "confidence": "high"
   },
   {
-   "base": "openrouter/sonoma-sky-alpha",
-   "developer": "xAI",
+   "base": "openai/codex-mini",
+   "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
    "confidence": "high",
-   "note": "Stealth model revealed as xAI's Grok 4 Fast (Sept 2025); API-only"
+   "note": "codex-mini-latest, fine-tuned o4-mini, API-only"
+  },
+  {
+   "base": "openai/gpt-3.5-turbo",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-4.1-2025-04-14",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-4.1-mini-2025-04-14",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
   },
   {
    "base": "openai/gpt-4.1-nano-2025-04-14",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-4o",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-4o-2024-08-06",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-4o-2024-11-20",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-4o-mini",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Epoch exact match, API access"
+  },
+  {
+   "base": "openai/gpt-4o-mini-2024-07-18",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5-2025-08-07",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5-chat-2025-08-07",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5-codex",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5-mini-2025-08-07",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5-nano-2025-08-07",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5.1",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5.1-chat",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5.1-codex",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/gpt-5.2",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
@@ -512,80 +1619,7 @@
    "confidence": "high"
   },
   {
-   "base": "google/gemini-2.0-flash-exp",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "deepseek/deepseek-v3.1-terminus",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3-coder-next-2025-02-03",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "meta-llama/llama-3.1-70b-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3-next-80b-a3b-instruct-2509",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "poolside/laguna-xs.2",
-   "developer": "Poolside",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "low",
-   "note": "Poolside Laguna family released open-weight on HF (Apache 2.0/OpenMDW); XS 2 specifically assumed covered; Poolside US-headquartered with Paris presence, low confidence on both"
-  },
-  {
-   "base": "x-ai/grok-4.3",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "x-ai/grok-3-mini",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3-32b-04-28",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-4o",
+   "base": "openai/gpt-5.3-chat",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
@@ -593,175 +1627,7 @@
    "confidence": "high"
   },
   {
-   "base": "openrouter/quasar-alpha",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Stealth model revealed as an OpenAI GPT-4.1 pre-release test (April 2025); API-only"
-  },
-  {
-   "base": "qwen/qwen3-coder-30b-a3b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "anthropic/claude-4-opus",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3.5-35b-a3b",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openrouter/horizon-beta",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Stealth model revealed as an OpenAI GPT-5-family pre-release test (Aug 2025); API-only"
-  },
-  {
-   "base": "mistralai/mistral-small-24b-instruct-2501",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Apache 2.0 release"
-  },
-  {
-   "base": "openai/text-embedding-3-small",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Proprietary embedding model, API-only"
-  },
-  {
-   "base": "google/gemini-2.5-pro-exp-03-25",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-2.5-flash-preview-09-2025",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-flash-1.5",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3.7-plus",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Qwen Plus line is Alibaba's proprietary API tier; no weights released, no HF id"
-  },
-  {
-   "base": "meta-llama/llama-4-maverick-17b-128e-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "mistralai/devstral-2512",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "x-ai/grok-4.5",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Released 2026-07-08, API-only per Epoch exact match; no weights released as of Jul 2026"
-  },
-  {
-   "base": "google/gemma-3-27b-it",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "deepseek/deepseek-chat-v3",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openrouter/elephant-alpha",
-   "developer": "InclusionAI (Ant Group)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Stealth model revealed 2026-04-21 as Ling-2.6-flash (inclusionAI/Ling-2.6-flash on HF), open-weight release by Ant Group's InclusionAI"
-  },
-  {
-   "base": "kwaipilot/kat-coder-pro-v1",
-   "developer": "Kuaishou (Kwaipilot)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "KAT-Coder-Pro is proprietary, served via Kuaishou StreamLake API; only the separate KAT-Dev variants are open-weight"
-  },
-  {
-   "base": "deepseek/deepseek-v3.2-exp",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-2.5-flash-lite-preview-06-17",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-5.1",
+   "base": "openai/gpt-5.3-codex",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
@@ -769,66 +1635,16 @@
    "confidence": "high"
   },
   {
-   "base": "google/gemma-3-12b-it",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3-30b-a3b-04-28",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-5.6-luna",
+   "base": "openai/gpt-5.4",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
    "confidence": "high",
-   "note": "Epoch exact match, API access, released 2026-07-09"
+   "note": "Epoch exact: API access"
   },
   {
-   "base": "inclusionai/ring-2.6-1t",
-   "developer": "InclusionAI (Ant Group)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "MIT-licensed open weights at inclusionAI/Ring-2.6-1T on HF despite missing catalog HF id"
-  },
-  {
-   "base": "z-ai/glm-4.5",
-   "developer": "Zhipu AI (Z.ai)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "cohere/north-mini-code",
-   "developer": "Cohere",
-   "origin": "Other",
-   "origin_country": "Canada",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Open-weight release (CohereLabs/North-Mini-Code-1.0), unlike Cohere's API-only Command line"
-  },
-  {
-   "base": "moonshotai/kimi-k2",
-   "developer": "Moonshot AI",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-5-chat-2025-08-07",
+   "base": "openai/gpt-5.4-mini",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
@@ -836,106 +1652,8 @@
    "confidence": "high"
   },
   {
-   "base": "openrouter/healer-alpha",
-   "developer": "Unknown",
-   "origin": "Unknown",
-   "origin_country": "Unknown",
-   "weights": "unknown",
-   "confidence": "low",
-   "note": "Stealth model (Mar 2026) never officially revealed; community speculation points to Zhipu GLM-5V based on provider-account history, but unconfirmed"
-  },
-  {
-   "base": "mistralai/mistral-small-3.2-24b-instruct-2506",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "moonshotai/kimi-k2.5-0127",
-   "developer": "Moonshot AI",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo moonshotai/Kimi-K2.5; Epoch lists open weights (unrestricted)"
-  },
-  {
-   "base": "xiaomi/mimo-v2-pro",
-   "developer": "Xiaomi",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "Debuted as cloaked 'Hunter Alpha' then proprietary API; no XiaomiMiMo/MiMo-V2-Pro HF repo found (successor MiMo-V2.5-Pro is open); Epoch exact match lacks accessibility info"
-  },
-  {
-   "base": "minimax/minimax-m2.7",
-   "developer": "MiniMax",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo MiniMaxAI/MiniMax-M2.7; Epoch: open weights (non-commercial)"
-  },
-  {
-   "base": "moonshotai/kimi-k2.6",
-   "developer": "Moonshot AI",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo moonshotai/Kimi-K2.6; Epoch exact: open weights (unrestricted)"
-  },
-  {
-   "base": "nvidia/nemotron-3-ultra-550b-a55b",
-   "developer": "NVIDIA",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16; Epoch: open weights"
-  },
-  {
-   "base": "nvidia/nemotron-3-super-120b-a12b",
-   "developer": "NVIDIA",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
-  },
-  {
-   "base": "deepseek/deepseek-chat-v3-0324",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo deepseek-ai/DeepSeek-V3-0324, MIT-licensed open weights"
-  },
-  {
-   "base": "stepfun/step-3.7-flash",
-   "developer": "StepFun",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo stepfun-ai/Step-3.7-Flash"
-  },
-  {
-   "base": "qwen/qwen3.6-plus-04-02",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Qwen Plus line is Alibaba's proprietary API tier (no HF release); Epoch lists Qwen 3.6 Plus as API access"
-  },
-  {
-   "base": "anthropic/claude-3-7-sonnet",
-   "developer": "Anthropic",
+   "base": "openai/gpt-5.4-nano",
+   "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
@@ -951,318 +1669,13 @@
    "note": "Epoch exact: API access"
   },
   {
-   "base": "anthropic/claude-4.5-haiku",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "z-ai/glm-5",
-   "developer": "Zhipu AI (Z.ai)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo zai-org/GLM-5; Epoch exact: open weights (unrestricted)"
-  },
-  {
-   "base": "openai/gpt-5.4",
+   "base": "openai/gpt-5.6-luna",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
    "confidence": "high",
-   "note": "Epoch exact: API access"
-  },
-  {
-   "base": "xiaomi/mimo-v2.5-pro",
-   "developer": "Xiaomi",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo XiaomiMiMo/MiMo-V2.5-Pro, MIT license; Epoch exact: open weights (unrestricted)"
-  },
-  {
-   "base": "google/gemini-3.1-pro-preview",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-2.5-pro",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "x-ai/grok-4-fast",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "API-only per Epoch; no Grok 4 family weight release as of July 2026"
-  },
-  {
-   "base": "mistralai/mistral-nemo",
-   "developer": "Mistral AI (with NVIDIA)",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo mistralai/Mistral-Nemo-Instruct-2407, Apache 2.0"
-  },
-  {
-   "base": "poolside/laguna-m.1",
-   "developer": "Poolside",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo poolside/Laguna-M.1; Poolside is a San Francisco-based US lab releasing open-weight Laguna models"
-  },
-  {
-   "base": "z-ai/glm-5.1",
-   "developer": "Zhipu AI (Z.ai)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "HF repo zai-org/GLM-5.1"
-  },
-  {
-   "base": "openai/gpt-5-mini-2025-08-07",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "xiaomi/mimo-v2-flash",
-   "developer": "Xiaomi",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "XiaomiMiMo/MiMo-V2-Flash on HF; Epoch exact: open weights (unrestricted); catalog delisted"
-  },
-  {
-   "base": "google/gemini-3.1-flash-lite-preview",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-3.1-flash-lite",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-4.1-2025-04-14",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "meta-llama/llama-3.3-70b-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "deepseek/deepseek-r1-0528",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3.6-plus-preview",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Qwen Plus line is API-only; Epoch lists Qwen 3.6 Plus as API access"
-  },
-  {
-   "base": "google/gemini-2.5-flash-lite-preview-09-2025",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openrouter/hunter-alpha",
-   "developer": "Xiaomi",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "low",
-   "note": "Stealth model revealed March 2026 as an early test build of Xiaomi MiMo-V2-Pro; MiMo-V2 series weights released on HF (MIT), but the exact Pro test build's weight status is less certain"
-  },
-  {
-   "base": "google/gemini-2.0-flash-lite-001",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "meta-llama/llama-3.1-8b-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "deepseek/deepseek-r1",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3-embedding-8b",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Embedding model; weights on HF (Qwen/Qwen3-Embedding-8B, Apache 2.0) despite catalog delisting"
-  },
-  {
-   "base": "anthropic/claude-5-fable",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-2.5-flash-preview-05-20",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3.7-max",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Qwen Max line is API-only; Epoch exact match, API access"
-  },
-  {
-   "base": "google/gemini-2.5-flash-preview-04-17",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "z-ai/glm-4.6",
-   "developer": "Zhipu AI (Z.ai)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-2.5-pro-preview-03-25",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3.5-flash",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "low",
-   "note": "Hosted production variant of Qwen3.5-35B-A3B, whose weights are on HF under Apache 2.0; the hosted Flash endpoint itself may include unreleased production tuning"
-  },
-  {
-   "base": "xiaomi/mimo-v2-omni",
-   "developer": "Xiaomi",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "low",
-   "note": "MiMo-V2 series (March 2026) released open weights on HF under MIT; Omni-variant repo not directly verified"
-  },
-  {
-   "base": "moonshotai/kimi-k3",
-   "developer": "Moonshot AI",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "Released July 16, 2026 via API; open-weight release committed for July 27, 2026 but weights not downloadable as of July 24 — will flip to open days after this classification"
-  },
-  {
-   "base": "nex-agi/nex-n2-pro",
-   "developer": "Nex AGI (Shanghai Innovation Institute alliance)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "finetune_of": "Qwen3.5",
-   "confidence": "high",
-   "note": "Apache 2.0 on HF; post-trained on Alibaba's Qwen3.5-397B-A17B base"
-  },
-  {
-   "base": "moonshotai/kimi-k2.7-code",
-   "developer": "Moonshot AI",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "inclusionai/ling-2.6-1t",
-   "developer": "Ant Group (inclusionAI)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Weights on HF (inclusionAI/Ling-2.6-1T, MIT) despite catalog lacking HF id"
-  },
-  {
-   "base": "google/gemini-flash-1.5-8b",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
+   "note": "Epoch exact match, API access, released 2026-07-09"
   },
   {
    "base": "openai/gpt-5.6-sol",
@@ -1271,23 +1684,6 @@
    "origin_country": "United States",
    "weights": "closed",
    "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3.5-397b-a17b",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "z-ai/glm-4.7-flash",
-   "developer": "Zhipu AI (Z.ai)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "GLM-4.7-Flash, open weights on Hugging Face (zai-org/GLM-4.7-Flash)."
   },
   {
    "base": "openai/gpt-5.6-terra",
@@ -1299,761 +1695,42 @@
    "note": "Epoch exact match: API access only."
   },
   {
-   "base": "openrouter/polaris-alpha",
+   "base": "openai/gpt-oss-120b",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Stealth model revealed by OpenRouter as an early version of OpenAI GPT-5.1 (Nov 2025)."
-  },
-  {
-   "base": "google/gemini-2.5-pro-preview-06-05",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "microsoft/wizardlm-2-8x22b",
-   "developer": "Microsoft",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "finetune_of": "Mixtral 8x22B",
-   "confidence": "high",
-   "note": "Microsoft AI finetune of Mistral's Mixtral 8x22B; weights on HF (briefly pulled in 2024, mirrors remain downloadable)."
-  },
-  {
-   "base": "openrouter/sherlock-think-alpha",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Stealth model revealed as an early snapshot of xAI Grok 4.1 Fast with reasoning (Nov 2025)."
-  },
-  {
-   "base": "nex-agi/deepseek-v3.1-nex-n1",
-   "developer": "Nex AGI (Shanghai Innovation Institute alliance)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "finetune_of": "DeepSeek V3.1",
-   "confidence": "high",
-   "note": "Post-trained DeepSeek-V3.1 by Nex-AGI (Shanghai); weights on HF (nex-agi/DeepSeek-V3.1-Nex-N1)."
-  },
-  {
-   "base": "anthropic/claude-4.1-opus",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openrouter/pony-alpha",
-   "developer": "Zhipu AI (Z.ai)",
-   "origin": "China",
-   "origin_country": "China",
    "weights": "open",
    "confidence": "high",
-   "note": "Stealth model; Zhipu confirmed on 2026-02-11 that Pony Alpha is GLM-5, released as open weights."
+   "note": "OpenAI open-weight release, Aug 2025"
   },
   {
-   "base": "arcee-ai/trinity-large-thinking",
-   "developer": "Arcee AI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Open-source reasoning model on HF (arcee-ai/Trinity-Large-Thinking)."
-  },
-  {
-   "base": "moonshotai/kimi-k2-thinking",
-   "developer": "Moonshot AI",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-2.0-pro-exp-02-05",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Experimental API/preview release; weights never published."
-  },
-  {
-   "base": "qwen/qwen3.5-9b",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Epoch exact match: open weights (restricted use)."
-  },
-  {
-   "base": "openai/gpt-5-codex",
+   "base": "openai/gpt-oss-20b",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "deepseek/deepseek-r1-distill-llama-70b",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
    "weights": "open",
    "confidence": "high",
-   "note": "Official DeepSeek distillation of R1 onto Llama-3.3-70B; classified to DeepSeek (China) as developer."
+   "note": "Open-weight Apache 2.0 release by OpenAI"
   },
   {
-   "base": "openrouter/sonoma-dusk-alpha",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Stealth model revealed as xAI Grok 4 Fast (non-reasoning tier), Sept 2025."
-  },
-  {
-   "base": "poolside/laguna-xs-2.1",
-   "developer": "Poolside",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Poolside is a U.S. AI company; weights on HF (poolside/Laguna-XS-2.1)."
-  },
-  {
-   "base": "poolside/laguna-s-2.1",
-   "developer": "Poolside",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Weights on HF (poolside/Laguna-S-2.1)."
-  },
-  {
-   "base": "gryphe/mythomax-l2-13b",
-   "developer": "Gryphe (community)",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "finetune_of": "Llama 2",
-   "confidence": "high",
-   "note": "Community merge of Llama 2 13B; origin follows base model developer Meta (US)."
-  },
-  {
-   "base": "qwen/qwen-2.5-72b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openrouter/optimus-alpha",
+   "base": "openai/gpt-oss-safeguard-20b",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Stealth model revealed as an early version of OpenAI GPT-4.1 (April 2025)."
-  },
-  {
-   "base": "x-ai/grok-3-mini-beta",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Grok 3 mini; API-only, weights never released (unlike Grok-1/Grok-2)."
-  },
-  {
-   "base": "mistralai/mistral-7b-instruct",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
    "weights": "open",
    "confidence": "high",
-   "note": "Apache-2.0 open weights on HF (mistralai/Mistral-7B-Instruct)."
-  },
-  {
-   "base": "qwen/qwen-2.5-7b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-5.1-chat",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "mistralai/devstral-small-2507",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Devstral Small 1.1 (2507) weights on Hugging Face under Apache 2.0"
-  },
-  {
-   "base": "google/gemini-2.0-flash-lite-preview-02-05",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "cohere/command-r-08-2024",
-   "developer": "Cohere",
-   "origin": "Other",
-   "origin_country": "Canada",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Weights released as CohereForAI/c4ai-command-r-08-2024 on Hugging Face (CC-BY-NC)"
-  },
-  {
-   "base": "mistralai/mistral-tiny",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high",
-   "note": "mistral-tiny API endpoint serves Mistral 7B Instruct, an open-weight model"
-  },
-  {
-   "base": "anthropic/claude-3-haiku",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "mistralai/mistral-small-3.1-24b-instruct-2503",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "nousresearch/hermes-3-llama-3.1-70b",
-   "developer": "Nous Research",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "finetune_of": "Llama 3.1",
-   "confidence": "high",
-   "note": "Nous Research finetune of Meta Llama 3.1 70B; base developer is US"
-  },
-  {
-   "base": "perplexity/pplx-embed-v1-0.6B",
-   "developer": "Perplexity",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Embedding model; weights on Hugging Face (perplexity-ai/pplx-embed-v1-0.6b, MIT), continued-pretrained from Qwen3 by Perplexity"
-  },
-  {
-   "base": "google/gemini-embedding-001",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Embedding model, API-only"
-  },
-  {
-   "base": "google/gemma-3-4b-it",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/text-embedding-3-large",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Embedding model, API-only"
-  },
-  {
-   "base": "qwen/qwen3-embedding-4b",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Qwen3-Embedding-4B weights on Hugging Face under Apache 2.0"
-  },
-  {
-   "base": "google/gemini-3.1-pro-preview-customtools",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3-235b-a22b-thinking-2507",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-pro-1.5",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/o3-mini-2025-01-31",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "mistralai/mistral-medium-3.5",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Mistral Medium line is API-only; no weights release"
-  },
-  {
-   "base": "qwen/qwen3-coder-plus",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Proprietary API variant of the open Qwen3 Coder 480B; the Plus endpoint itself has no released weights"
-  },
-  {
-   "base": "x-ai/grok-4.20",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Epoch exact match: API access; xAI has only released Grok-1/Grok-2 weights"
-  },
-  {
-   "base": "alibaba/tongyi-deepresearch-30b-a3b",
-   "developer": "Alibaba (Tongyi Lab)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Weights on Hugging Face (Alibaba-NLP/Tongyi-DeepResearch-30B-A3B, Apache 2.0)"
-  },
-  {
-   "base": "meta-llama/llama-3.1-405b-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen2.5-vl-72b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "deepseek/deepseek-r1-0528-qwen3-8b",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "DeepSeek's own R1-0528 distillation onto Qwen3-8B; weights on Hugging Face (MIT)"
-  },
-  {
-   "base": "mistralai/mixtral-8x7b-instruct",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3.6-flash",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "low",
-   "note": "Multiple sources report Qwen3.6-Flash API corresponds to the open-weight Qwen3.6-35B-A3B (Apache 2.0), but mapping rests on third-party blogs and OpenRouter's multimodal/1M-context description differs, so weights status is low confidence"
-  },
-  {
-   "base": "qwen/qwen3.5-plus",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "Qwen 'Plus' line is proprietary/hosted API-only; Epoch lists it as 'hosted 397B-A17B' while the open-weight Qwen3.5 397B is a separate release — weights status marked low confidence"
-  },
-  {
-   "base": "qwen/qwen3-235b-a22b-04-28",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-4o-2024-11-20",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "x-ai/grok-3-beta",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "API-only; Musk promised Grok 3 open-sourcing ~Feb 2026 but no evidence weights were actually released as of July 2026 — low confidence pending verification"
-  },
-  {
-   "base": "meta-llama/llama-3.2-1b-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "nousresearch/hermes-3-llama-3.1-405b",
-   "developer": "Nous Research",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "finetune_of": "Llama 3.1",
-   "confidence": "high",
-   "note": "Community finetune of Meta Llama 3.1 405B; Nous Research is also US-based"
-  },
-  {
-   "base": "meta-llama/llama-3.2-3b-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openrouter/sherlock-dash-alpha",
-   "developer": "xAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Stealth model revealed as early snapshot of xAI Grok 4.1 Fast (non-reasoning); Grok 4.1 is API-only"
-  },
-  {
-   "base": "nvidia/nemotron-3-nano-30b-a3b",
-   "developer": "NVIDIA",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "meta-llama/llama-4-scout-17b-16e-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "nvidia/nemotron-nano-12b-v2-vl",
-   "developer": "NVIDIA",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/o4-mini-2025-04-16",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openrouter/bert-nebulon-alpha",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Stealth model revealed by OpenRouter as early version of Mistral Large 3, released open-weight under Apache 2.0 in December 2025"
-  },
-  {
-   "base": "openrouter/horizon-alpha",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Stealth model confirmed by OpenRouter as an early checkpoint in the GPT-5 family; GPT-5 is API-only"
-  },
-  {
-   "base": "google/gemini-2.0-flash-thinking-exp-01-21",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-3.6-flash",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-5.1-codex",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-4o-mini-2024-07-18",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "baai/bge-m3",
-   "developer": "Beijing Academy of Artificial Intelligence (BAAI)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Open-weight embedding model (BAAI/bge-m3 on Hugging Face, MIT license); catalog entry delisted"
-  },
-  {
-   "base": "minimax/minimax-01",
-   "developer": "MiniMax",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwq-32b",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Epoch exact match: open weights (Apache 2.0), Qwen/QwQ-32B on Hugging Face"
-  },
-  {
-   "base": "microsoft/phi-4",
-   "developer": "Microsoft",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3-vl-8b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen-2.5-coder-32b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "z-ai/glm-5v-turbo",
-   "developer": "Z.ai (Zhipu AI)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "Reported as proprietary API-only at April 2026 launch (unlike open-weight GLM-5/5.1/5.2); low confidence in case weights were released later"
-  },
-  {
-   "base": "google/gemini-2.0-flash-thinking-exp-1219",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Experimental Gemini reasoning model, API-only"
-  },
-  {
-   "base": "meta-llama/llama-guard-3-8b",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Safety classifier based on Llama 3.1 8B, weights on HF"
-  },
-  {
-   "base": "openai/codex-mini",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "codex-mini-latest, fine-tuned o4-mini, API-only"
-  },
-  {
-   "base": "qwen/qwen-2-vl-7b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Qwen2-VL-7B-Instruct weights on HF (Apache 2.0)"
-  },
-  {
-   "base": "deepseek/deepseek-r1-distill-qwen-14b",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "DeepSeek distillation onto Qwen2.5-14B, open weights (MIT); exact Epoch match"
-  },
-  {
-   "base": "cognitivecomputations/dolphin-mixtral-8x22b",
-   "developer": "Cognitive Computations (Eric Hartford)",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "finetune_of": "Mixtral 8x22B",
-   "confidence": "high",
-   "note": "Community finetune of Mistral's Mixtral 8x22B; origin set to base developer country"
-  },
-  {
-   "base": "cohere/command-r7b-12-2024",
-   "developer": "Cohere",
-   "origin": "Other",
-   "origin_country": "Canada",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Weights released on HF as CohereForAI/c4ai-command-r7b-12-2024 (CC-BY-NC)"
-  },
-  {
-   "base": "qwen/qwq-32b-preview",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "QwQ-32B-Preview weights on HF (Apache 2.0)"
-  },
-  {
-   "base": "openai/gpt-3.5-turbo",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "infermatic/mn-inferor-12b",
-   "developer": "Infermatic",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "finetune_of": "Mistral Nemo",
-   "confidence": "high",
-   "note": "Community merge of Mistral Nemo 12B derivatives (MN = Mistral Nemo); weights on HF"
-  },
-  {
-   "base": "qwen/qwen2.5-32b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Qwen2.5-32B-Instruct weights on HF (Apache 2.0)"
-  },
-  {
-   "base": "google/gemini-flash-1.5-exp",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "mistralai/mixtral-8x22b-instruct",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Apache 2.0 open weights"
-  },
-  {
-   "base": "qwen/qwen-max-2025-01-25",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Qwen Max is API-only; weights never released"
+   "note": "Open-weight safety reasoning model built on gpt-oss-20b"
   },
   {
    "base": "openai/o1-2024-12-17",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "openai/o1-mini",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
@@ -2069,42 +1746,15 @@
    "confidence": "high"
   },
   {
-   "base": "google/learnlm-1.5-pro-experimental",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Experimental education-tuned Gemini 1.5 Pro variant, API-only"
-  },
-  {
-   "base": "google/gemini-pro-1.5-exp",
-   "developer": "Google",
+   "base": "openai/o3-2025-04-16",
+   "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
    "confidence": "high"
   },
   {
-   "base": "qwen/qwen3.6-35b-a3b",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Exact Epoch match, open weights unrestricted, HF id present"
-  },
-  {
-   "base": "mistralai/devstral-small-2505",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Devstral Small 2505 released under Apache 2.0 on Hugging Face (mistralai/Devstral-Small-2505); catalog delisted"
-  },
-  {
-   "base": "openai/o4-mini-high-2025-04-16",
+   "base": "openai/o3-mini-2025-01-31",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
@@ -2120,104 +1770,7 @@
    "confidence": "high"
   },
   {
-   "base": "qwen/qwen3-vl-32b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "mistralai/codestral-2508",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "Codestral 25.08 served via Mistral API/enterprise deployment; no public weight download found, though Epoch fuzzy row lists a non-commercial open-weights Codestral dated 2025-07-30 — needs verification"
-  },
-  {
-   "base": "amazon/nova-lite-v1",
-   "developer": "Amazon",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "openrouter/andromeda-alpha",
-   "developer": "NVIDIA",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Stealth model officially revealed by OpenRouter as NVIDIA Nemotron Nano 2 VL, a 12B multimodal model released open-weight on Hugging Face"
-  },
-  {
-   "base": "liquid/lfm-7b",
-   "developer": "Liquid AI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "LFM-7B (Jan 2025) was proprietary/API-hosted; Liquid only opened weights starting with LFM2 — verify no later weight release"
-  },
-  {
-   "base": "qwen/qwen3-next-80b-a3b-thinking-2509",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "neversleep/llama-3-lumimaid-8b",
-   "developer": "NeverSleep (community)",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "finetune_of": "Llama 3",
-   "confidence": "high",
-   "note": "Community roleplay finetune of Meta Llama 3 8B; origin follows base developer (Meta, US)"
-  },
-  {
-   "base": "qwen/qwen3-14b-04-28",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "cohere/command-r",
-   "developer": "Cohere",
-   "origin": "Other",
-   "origin_country": "Canada",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Command R weights on Hugging Face (CohereForAI/c4ai-command-r-v01, CC-BY-NC non-commercial)"
-  },
-  {
-   "base": "microsoft/mai-ds-r1",
-   "developer": "Microsoft",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "finetune_of": "DeepSeek R1",
-   "confidence": "high",
-   "note": "Microsoft AI post-trained DeepSeek R1; weights open on Hugging Face (microsoft/MAI-DS-R1); origin set to base model developer (DeepSeek, China) per finetune rule"
-  },
-  {
-   "base": "qwen/qwen-turbo-2024-11-01",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Qwen-Turbo is an API-only commercial model, weights never released"
-  },
-  {
-   "base": "openai/chatgpt-4o-latest",
+   "base": "openai/o4-mini-2025-04-16",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
@@ -2225,84 +1778,30 @@
    "confidence": "high"
   },
   {
-   "base": "bytedance-seed/seed-2.0-mini",
-   "developer": "ByteDance",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "ByteDance Seed 2.0 series served via API (Volcano Engine); no HF id and no known weight release, but model postdates knowledge cutoff — verify"
-  },
-  {
-   "base": "thedrummer/unslopnemo-12b",
-   "developer": "TheDrummer (community)",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "finetune_of": "Mistral Nemo",
-   "confidence": "high",
-   "note": "Community finetune of Mistral Nemo 12B; origin follows base developer (Mistral AI, France)"
-  },
-  {
-   "base": "mistralai/codestral-2501",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Codestral 25.01 is API/enterprise-only; unlike original Codestral 22B, weights were not publicly released"
-  },
-  {
-   "base": "intfloat/multilingual-e5-large",
-   "developer": "Microsoft Research (E5)",
+   "base": "openai/o4-mini-high-2025-04-16",
+   "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Embedding model; weights on Hugging Face (intfloat/multilingual-e5-large), MIT license"
-  },
-  {
-   "base": "qwen/qwen3-vl-235b-a22b-thinking",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
+   "weights": "closed",
    "confidence": "high"
   },
   {
-   "base": "openrouter/cypher-alpha",
-   "developer": "Unknown (stealth)",
-   "origin": "Unknown",
-   "origin_country": "Unknown",
-   "weights": "unknown",
-   "confidence": "low",
-   "note": "OpenRouter cloaked model (July 2025) attributed to fictional 'Cypher Labs'; never officially revealed — community speculation (Amazon/OpenAI) unconfirmed"
-  },
-  {
-   "base": "x-ai/grok-2-1212",
-   "developer": "xAI",
+   "base": "openai/text-embedding-3-large",
+   "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
-   "weights": "open",
+   "weights": "closed",
    "confidence": "high",
-   "note": "Grok 2 weights released on Hugging Face in August 2025 (xai-org/grok-2); classified by current status"
+   "note": "Embedding model, API-only"
   },
   {
-   "base": "qwen/qwen3-30b-a3b-instruct-2507",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "meta-llama/llama-3-70b-instruct",
-   "developer": "Meta",
+   "base": "openai/text-embedding-3-small",
+   "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
-   "weights": "open",
+   "weights": "closed",
    "confidence": "high",
-   "note": "Llama 3 70B Instruct, open weights under Llama license"
+   "note": "Proprietary embedding model, API-only"
   },
   {
    "base": "openchat/openchat-7b",
@@ -2315,32 +1814,13 @@
    "note": "OpenChat 3.5 7B is an open-weight finetune of Mistral 7B by the OpenChat research team (lead authors Tsinghua-affiliated); origin attribution low confidence"
   },
   {
-   "base": "deepseek/deepseek-v3.2-speciale",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
+   "base": "openrouter/andromeda-alpha",
+   "developer": "NVIDIA",
+   "origin": "US",
+   "origin_country": "United States",
    "weights": "open",
    "confidence": "high",
-   "note": "DeepSeek-V3.2 family released Dec 2025 with open weights per Epoch (unrestricted)"
-  },
-  {
-   "base": "tngtech/tng-r1t-chimera",
-   "developer": "TNG Technology Consulting",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "finetune_of": "DeepSeek R1",
-   "confidence": "high",
-   "note": "TNG (Germany) merge of DeepSeek R1 and V3; origin set to base model developer (DeepSeek, China) per rules"
-  },
-  {
-   "base": "deepseek/deepseek-r1-distill-qwen-32b",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Exact Epoch match, open weights (unrestricted)"
+   "note": "Stealth model officially revealed by OpenRouter as NVIDIA Nemotron Nano 2 VL, a 12B multimodal model released open-weight on Hugging Face"
   },
   {
    "base": "openrouter/aurora-alpha",
@@ -2352,106 +1832,565 @@
    "note": "Stealth model widely identified as OpenAI GPT-5.3-Codex-Spark (created Feb 8 2026, Codex-Spark announced Feb 13 2026); community reveal strong but no official OpenAI confirmation found"
   },
   {
-   "base": "mistralai/mistral-large-2512",
+   "base": "openrouter/bert-nebulon-alpha",
    "developer": "Mistral AI",
    "origin": "Other",
    "origin_country": "France",
    "weights": "open",
    "confidence": "high",
-   "note": "Mistral Large 3 (675B MoE) released under Apache 2.0 with downloadable weights per catalog description"
+   "note": "Stealth model revealed by OpenRouter as early version of Mistral Large 3, released open-weight under Apache 2.0 in December 2025"
   },
   {
-   "base": "amazon/nova-pro-v1",
-   "developer": "Amazon",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
+   "base": "openrouter/cypher-alpha",
+   "developer": "Unknown (stealth)",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "unknown",
+   "confidence": "low",
+   "note": "OpenRouter cloaked model (July 2025) attributed to fictional 'Cypher Labs'; never officially revealed — community speculation (Amazon/OpenAI) unconfirmed"
   },
   {
-   "base": "mistralai/ministral-8b-2512",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemini-2.5-flash-image-preview",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Gemini API-only (Nano Banana image model)"
-  },
-  {
-   "base": "mistralai/ministral-14b-2512",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "anthropic/claude-3-sonnet",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "nvidia/llama-3.1-nemotron-70b-instruct",
-   "developer": "NVIDIA",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "finetune_of": "Llama 3.1",
-   "confidence": "high",
-   "note": "NVIDIA open-weight finetune of Llama 3.1 70B, on Hugging Face"
-  },
-  {
-   "base": "openai/gpt-oss-safeguard-20b",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
+   "base": "openrouter/elephant-alpha",
+   "developer": "InclusionAI (Ant Group)",
+   "origin": "China",
+   "origin_country": "China",
    "weights": "open",
    "confidence": "high",
-   "note": "Open-weight safety reasoning model built on gpt-oss-20b"
+   "note": "Stealth model revealed 2026-04-21 as Ling-2.6-flash (inclusionAI/Ling-2.6-flash on HF), open-weight release by Ant Group's InclusionAI"
   },
   {
-   "base": "openai/gpt-5.3-chat",
+   "base": "openrouter/healer-alpha",
+   "developer": "Unknown",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "unknown",
+   "confidence": "low",
+   "note": "Stealth model (Mar 2026) never officially revealed; community speculation points to Zhipu GLM-5V based on provider-account history, but unconfirmed"
+  },
+  {
+   "base": "openrouter/horizon-alpha",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "meta-llama/llama-3-8b-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "mistralai/ministral-8b",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
    "confidence": "high",
-   "note": "Ministral 8B weights downloadable under Mistral Research License (open-weight, non-commercial)"
+   "note": "Stealth model confirmed by OpenRouter as an early checkpoint in the GPT-5 family; GPT-5 is API-only"
   },
   {
-   "base": "openai/o3-2025-04-16",
+   "base": "openrouter/horizon-beta",
    "developer": "OpenAI",
    "origin": "US",
    "origin_country": "United States",
    "weights": "closed",
+   "confidence": "high",
+   "note": "Stealth model revealed as an OpenAI GPT-5-family pre-release test (Aug 2025); API-only"
+  },
+  {
+   "base": "openrouter/hunter-alpha",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "low",
+   "note": "Stealth model revealed March 2026 as an early test build of Xiaomi MiMo-V2-Pro; MiMo-V2 series weights released on HF (MIT), but the exact Pro test build's weight status is less certain"
+  },
+  {
+   "base": "openrouter/optimus-alpha",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Stealth model revealed as an early version of OpenAI GPT-4.1 (April 2025)."
+  },
+  {
+   "base": "openrouter/owl-alpha",
+   "developer": "Meituan",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Stealth model revealed 2026-06-30 as Meituan LongCat-2.0, open-license 1.6T MoE (web-confirmed via multiple sources incl. tech.yahoo.com and dayverse.id)"
+  },
+  {
+   "base": "openrouter/polaris-alpha",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Stealth model revealed by OpenRouter as an early version of OpenAI GPT-5.1 (Nov 2025)."
+  },
+  {
+   "base": "openrouter/pony-alpha",
+   "developer": "Zhipu AI (Z.ai)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Stealth model; Zhipu confirmed on 2026-02-11 that Pony Alpha is GLM-5, released as open weights."
+  },
+  {
+   "base": "openrouter/quasar-alpha",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Stealth model revealed as an OpenAI GPT-4.1 pre-release test (April 2025); API-only"
+  },
+  {
+   "base": "openrouter/sherlock-dash-alpha",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Stealth model revealed as early snapshot of xAI Grok 4.1 Fast (non-reasoning); Grok 4.1 is API-only"
+  },
+  {
+   "base": "openrouter/sherlock-think-alpha",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Stealth model revealed as an early snapshot of xAI Grok 4.1 Fast with reasoning (Nov 2025)."
+  },
+  {
+   "base": "openrouter/sonoma-dusk-alpha",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Stealth model revealed as xAI Grok 4 Fast (non-reasoning tier), Sept 2025."
+  },
+  {
+   "base": "openrouter/sonoma-sky-alpha",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Stealth model revealed as xAI's Grok 4 Fast (Sept 2025); API-only"
+  },
+  {
+   "base": "perplexity/pplx-embed-v1-0.6B",
+   "developer": "Perplexity",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Embedding model; weights on Hugging Face (perplexity-ai/pplx-embed-v1-0.6b, MIT), continued-pretrained from Qwen3 by Perplexity"
+  },
+  {
+   "base": "poolside/laguna-m.1",
+   "developer": "Poolside",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo poolside/Laguna-M.1; Poolside is a San Francisco-based US lab releasing open-weight Laguna models"
+  },
+  {
+   "base": "poolside/laguna-s-2.1",
+   "developer": "Poolside",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Weights on HF (poolside/Laguna-S-2.1)."
+  },
+  {
+   "base": "poolside/laguna-xs-2.1",
+   "developer": "Poolside",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Poolside is a U.S. AI company; weights on HF (poolside/Laguna-XS-2.1)."
+  },
+  {
+   "base": "poolside/laguna-xs.2",
+   "developer": "Poolside",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "low",
+   "note": "Poolside Laguna family released open-weight on HF (Apache 2.0/OpenMDW); XS 2 specifically assumed covered; Poolside US-headquartered with Paris presence, low confidence on both"
+  },
+  {
+   "base": "qwen/qwen-2-vl-72b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Qwen2-VL-72B-Instruct weights on Hugging Face"
+  },
+  {
+   "base": "qwen/qwen-2-vl-7b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Qwen2-VL-7B-Instruct weights on HF (Apache 2.0)"
+  },
+  {
+   "base": "qwen/qwen-2.5-72b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
    "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen-2.5-7b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen-2.5-coder-32b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen-max-2025-01-25",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Qwen Max is API-only; weights never released"
+  },
+  {
+   "base": "qwen/qwen-plus-2025-01-25",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Qwen-Plus is an API-only commercial model despite Qwen2.5 open-weight lineage"
+  },
+  {
+   "base": "qwen/qwen-turbo-2024-11-01",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Qwen-Turbo is an API-only commercial model, weights never released"
+  },
+  {
+   "base": "qwen/qwen2.5-32b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Qwen2.5-32B-Instruct weights on HF (Apache 2.0)"
+  },
+  {
+   "base": "qwen/qwen2.5-vl-32b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen2.5-vl-72b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-14b-04-28",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-235b-a22b-04-28",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-235b-a22b-07-25",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-235b-a22b-thinking-2507",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-30b-a3b-04-28",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-30b-a3b-instruct-2507",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-32b-04-28",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-8b-04-28",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-coder-30b-a3b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-coder-480b-a35b-07-25",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-coder-next-2025-02-03",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-coder-plus",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Proprietary API variant of the open Qwen3 Coder 480B; the Plus endpoint itself has no released weights"
+  },
+  {
+   "base": "qwen/qwen3-embedding-4b",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Qwen3-Embedding-4B weights on Hugging Face under Apache 2.0"
+  },
+  {
+   "base": "qwen/qwen3-embedding-8b",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Embedding model; weights on HF (Qwen/Qwen3-Embedding-8B, Apache 2.0) despite catalog delisting"
+  },
+  {
+   "base": "qwen/qwen3-next-80b-a3b-instruct-2509",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-next-80b-a3b-thinking-2509",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-vl-235b-a22b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-vl-235b-a22b-thinking",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-vl-32b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3-vl-8b-instruct",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3.5-35b-a3b",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3.5-397b-a17b",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "qwen/qwen3.5-9b",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Epoch exact match: open weights (restricted use)."
+  },
+  {
+   "base": "qwen/qwen3.5-flash",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "low",
+   "note": "Hosted production variant of Qwen3.5-35B-A3B, whose weights are on HF under Apache 2.0; the hosted Flash endpoint itself may include unreleased production tuning"
+  },
+  {
+   "base": "qwen/qwen3.5-plus",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "low",
+   "note": "Qwen 'Plus' line is proprietary/hosted API-only; Epoch lists it as 'hosted 397B-A17B' while the open-weight Qwen3.5 397B is a separate release — weights status marked low confidence"
+  },
+  {
+   "base": "qwen/qwen3.6-35b-a3b",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Exact Epoch match, open weights unrestricted, HF id present"
+  },
+  {
+   "base": "qwen/qwen3.6-flash",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "low",
+   "note": "Multiple sources report Qwen3.6-Flash API corresponds to the open-weight Qwen3.6-35B-A3B (Apache 2.0), but mapping rests on third-party blogs and OpenRouter's multimodal/1M-context description differs, so weights status is low confidence"
+  },
+  {
+   "base": "qwen/qwen3.6-plus-04-02",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Qwen Plus line is Alibaba's proprietary API tier (no HF release); Epoch lists Qwen 3.6 Plus as API access"
+  },
+  {
+   "base": "qwen/qwen3.6-plus-preview",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Qwen Plus line is API-only; Epoch lists Qwen 3.6 Plus as API access"
+  },
+  {
+   "base": "qwen/qwen3.7-max",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Qwen Max line is API-only; Epoch exact match, API access"
+  },
+  {
+   "base": "qwen/qwen3.7-plus",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Qwen Plus line is Alibaba's proprietary API tier; no weights released, no HF id"
+  },
+  {
+   "base": "qwen/qwq-32b",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Epoch exact match: open weights (Apache 2.0), Qwen/QwQ-32B on Hugging Face"
+  },
+  {
+   "base": "qwen/qwq-32b-preview",
+   "developer": "Alibaba (Qwen)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "QwQ-32B-Preview weights on HF (Apache 2.0)"
   },
   {
    "base": "sao10k/l3-euryale-70b",
@@ -2464,107 +2403,6 @@
    "note": "Community roleplay finetune of Llama 3 70B; origin set to base developer (Meta, US)"
   },
   {
-   "base": "qwen/qwen2.5-vl-32b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "amazon/nova-micro-v1",
-   "developer": "Amazon",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "qwen/qwen3-8b-04-28",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "mistralai/mistral-large-2411",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Mistral Large 2 (2411) weights on Hugging Face under Mistral Research License (open-weight, non-commercial)"
-  },
-  {
-   "base": "google/gemma-3n-e4b-it",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "openai/gpt-4o-2024-08-06",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high"
-  },
-  {
-   "base": "google/gemma-2-27b-it",
-   "developer": "Google DeepMind",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "sentence-transformers/all-minilm-l6-v2",
-   "developer": "Sentence-Transformers (UKP Lab, TU Darmstadt / Hugging Face community)",
-   "origin": "Other",
-   "origin_country": "Germany",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Embedding model; MiniLM-based sentence encoder, weights on Hugging Face"
-  },
-  {
-   "base": "thedrummer/rocinante-12b",
-   "developer": "TheDrummer (community)",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "finetune_of": "Mistral Nemo",
-   "confidence": "high",
-   "note": "Community finetune of Mistral Nemo 12B; origin set to base developer (Mistral AI, France)"
-  },
-  {
-   "base": "meta-llama/llama-3.2-11b-vision-instruct",
-   "developer": "Meta",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
-   "base": "liquid/lfm-3b",
-   "developer": "Liquid AI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "LFM1-series models were API/on-prem only; only the later LFM2 series is open-weight"
-  },
-  {
-   "base": "mistralai/mistral-7b-instruct-v0.3",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "high"
-  },
-  {
    "base": "sao10k/l3.1-euryale-70b",
    "developer": "Sao10K (community)",
    "origin": "US",
@@ -2573,51 +2411,6 @@
    "finetune_of": "Llama 3.1",
    "confidence": "high",
    "note": "Community roleplay finetune of Llama 3.1 70B"
-  },
-  {
-   "base": "deepseek/deepseek-r1-zero",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "DeepSeek-R1-Zero weights released on Hugging Face alongside R1 (Jan 2025)"
-  },
-  {
-   "base": "google/gemini-exp-1206",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Experimental Gemini API-only checkpoint (precursor to Gemini 2.0 Pro)"
-  },
-  {
-   "base": "deepseek/deepseek-v3-base",
-   "developer": "DeepSeek",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "DeepSeek-V3-Base weights on Hugging Face"
-  },
-  {
-   "base": "nousresearch/hermes-2-pro-llama-3-8b",
-   "developer": "Nous Research",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "finetune_of": "Llama 3",
-   "confidence": "high",
-   "note": "Nous Research (US) finetune of Llama 3 8B; base developer also US"
-  },
-  {
-   "base": "google/gemma-2-9b-it",
-   "developer": "Google",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "high"
   },
   {
    "base": "sao10k/l3.3-euryale-70b-v2.3",
@@ -2630,13 +2423,257 @@
    "note": "Community roleplay finetune of Llama 3.3 70B"
   },
   {
-   "base": "mistralai/ministral-3b",
-   "developer": "Mistral AI",
+   "base": "sentence-transformers/all-minilm-l6-v2",
+   "developer": "Sentence-Transformers (UKP Lab, TU Darmstadt / Hugging Face community)",
+   "origin": "Other",
+   "origin_country": "Germany",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Embedding model; MiniLM-based sentence encoder, weights on Hugging Face"
+  },
+  {
+   "base": "stepfun/step-3.5-flash",
+   "developer": "StepFun",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Open-source MoE per catalog; HF repo stepfun-ai/Step-3.5-Flash"
+  },
+  {
+   "base": "stepfun/step-3.7-flash",
+   "developer": "StepFun",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo stepfun-ai/Step-3.7-Flash"
+  },
+  {
+   "base": "tencent/hy3",
+   "developer": "Tencent",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo tencent/Hy3; 295B MoE open release"
+  },
+  {
+   "base": "tencent/hy3-preview",
+   "developer": "Tencent",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Tencent Hunyuan 3 preview; HF repo tencent/Hy3-preview"
+  },
+  {
+   "base": "thedrummer/rocinante-12b",
+   "developer": "TheDrummer (community)",
    "origin": "Other",
    "origin_country": "France",
+   "weights": "open",
+   "finetune_of": "Mistral Nemo",
+   "confidence": "high",
+   "note": "Community finetune of Mistral Nemo 12B; origin set to base developer (Mistral AI, France)"
+  },
+  {
+   "base": "thedrummer/unslopnemo-12b",
+   "developer": "TheDrummer (community)",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "open",
+   "finetune_of": "Mistral Nemo",
+   "confidence": "high",
+   "note": "Community finetune of Mistral Nemo 12B; origin follows base developer (Mistral AI, France)"
+  },
+  {
+   "base": "tngtech/deepseek-r1t-chimera",
+   "developer": "TNG Technology Consulting",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "finetune_of": "DeepSeek R1",
+   "confidence": "high",
+   "note": "German-made merge of DeepSeek R1 and V3; origin follows base model developer (DeepSeek, China); weights on HF"
+  },
+  {
+   "base": "tngtech/deepseek-r1t2-chimera",
+   "developer": "TNG Technology Consulting",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "finetune_of": "DeepSeek R1",
+   "confidence": "high",
+   "note": "German firm TNG's merge of DeepSeek R1 variants; origin set to base model developer country (China) per rules"
+  },
+  {
+   "base": "tngtech/tng-r1t-chimera",
+   "developer": "TNG Technology Consulting",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "finetune_of": "DeepSeek R1",
+   "confidence": "high",
+   "note": "TNG (Germany) merge of DeepSeek R1 and V3; origin set to base model developer (DeepSeek, China) per rules"
+  },
+  {
+   "base": "x-ai/grok-2-1212",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Grok 2 weights released on Hugging Face in August 2025 (xai-org/grok-2); classified by current status"
+  },
+  {
+   "base": "x-ai/grok-3-beta",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "low",
+   "note": "API-only; Musk promised Grok 3 open-sourcing ~Feb 2026 but no evidence weights were actually released as of July 2026 — low confidence pending verification"
+  },
+  {
+   "base": "x-ai/grok-3-mini",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "x-ai/grok-3-mini-beta",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
    "weights": "closed",
    "confidence": "high",
-   "note": "Ministral 3B is API-only; only the 8B sibling had research weights released. Epoch exact match: API access"
+   "note": "Grok 3 mini; API-only, weights never released (unlike Grok-1/Grok-2)."
+  },
+  {
+   "base": "x-ai/grok-4-07-09",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Grok 4 (July 2025), API-only; no weights release as of Jul 2026"
+  },
+  {
+   "base": "x-ai/grok-4-fast",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "API-only per Epoch; no Grok 4 family weight release as of July 2026"
+  },
+  {
+   "base": "x-ai/grok-4.1-fast",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Epoch exact match, API access; Grok 3+ series weights not released"
+  },
+  {
+   "base": "x-ai/grok-4.20",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Epoch exact match: API access; xAI has only released Grok-1/Grok-2 weights"
+  },
+  {
+   "base": "x-ai/grok-4.3",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high"
+  },
+  {
+   "base": "x-ai/grok-4.5",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "Released 2026-07-08, API-only per Epoch exact match; no weights released as of Jul 2026"
+  },
+  {
+   "base": "x-ai/grok-code-fast-1",
+   "developer": "xAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "high",
+   "note": "xAI API-only coding model; weights never released"
+  },
+  {
+   "base": "xiaomi/mimo-v2-flash",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "XiaomiMiMo/MiMo-V2-Flash on HF; Epoch exact: open weights (unrestricted); catalog delisted"
+  },
+  {
+   "base": "xiaomi/mimo-v2-omni",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "low",
+   "note": "MiMo-V2 series (March 2026) released open weights on HF under MIT; Omni-variant repo not directly verified"
+  },
+  {
+   "base": "xiaomi/mimo-v2-pro",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "low",
+   "note": "Debuted as cloaked 'Hunter Alpha' then proprietary API; no XiaomiMiMo/MiMo-V2-Pro HF repo found (successor MiMo-V2.5-Pro is open); Epoch exact match lacks accessibility info"
+  },
+  {
+   "base": "xiaomi/mimo-v2.5",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Epoch exact match, open weights; HF repo XiaomiMiMo/MiMo-V2.5"
+  },
+  {
+   "base": "xiaomi/mimo-v2.5-pro",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo XiaomiMiMo/MiMo-V2.5-Pro, MIT license; Epoch exact: open weights (unrestricted)"
+  },
+  {
+   "base": "z-ai/glm-4.5",
+   "developer": "Zhipu AI (Z.ai)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
+  },
+  {
+   "base": "z-ai/glm-4.5-air",
+   "developer": "Z.ai (Zhipu AI)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high"
   },
   {
    "base": "z-ai/glm-4.5v",
@@ -2647,102 +2684,74 @@
    "confidence": "high"
   },
   {
-   "base": "liquid/lfm-40b",
-   "developer": "Liquid AI",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "LFM-40B MoE served via API/on-prem only; weights never publicly released"
-  },
-  {
-   "base": "mistralai/mistral-small",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
-   "weights": "open",
-   "confidence": "low",
-   "note": "Unversioned slug; current Mistral Small (22B v24.09, Small 3.x) weights are open, but the original 2402 Mistral Small was API-only — depends which checkpoint the slug served"
-  },
-  {
-   "base": "microsoft/wizardlm-2-7b",
-   "developer": "Microsoft",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "open",
-   "confidence": "low",
-   "note": "WizardLM-2 weights released Apr 2024 then retracted by Microsoft; community mirrors remain downloadable"
-  },
-  {
-   "base": "cohere/command-r-plus-08-2024",
-   "developer": "Cohere",
-   "origin": "Other",
-   "origin_country": "Canada",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Weights released as CohereForAI/c4ai-command-r-plus-08-2024 (CC-BY-NC); Epoch: open weights non-commercial"
-  },
-  {
-   "base": "qwen/qwen-plus-2025-01-25",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "closed",
-   "confidence": "high",
-   "note": "Qwen-Plus is an API-only commercial model despite Qwen2.5 open-weight lineage"
-  },
-  {
-   "base": "anthracite-org/magnum-v4-72b",
-   "developer": "Anthracite (community)",
+   "base": "z-ai/glm-4.6",
+   "developer": "Zhipu AI (Z.ai)",
    "origin": "China",
    "origin_country": "China",
    "weights": "open",
-   "finetune_of": "Qwen 2.5",
-   "confidence": "high",
-   "note": "Community finetune of Qwen2.5-72B; origin set to base developer (Alibaba, China)"
-  },
-  {
-   "base": "qwen/qwen-2-vl-72b-instruct",
-   "developer": "Alibaba (Qwen)",
-   "origin": "China",
-   "origin_country": "China",
-   "weights": "open",
-   "confidence": "high",
-   "note": "Qwen2-VL-72B-Instruct weights on Hugging Face"
-  },
-  {
-   "base": "anthropic/claude-3-opus",
-   "developer": "Anthropic",
-   "origin": "US",
-   "origin_country": "United States",
-   "weights": "closed",
    "confidence": "high"
   },
   {
-   "base": "mistralai/mistral-large-2407",
-   "developer": "Mistral AI",
-   "origin": "Other",
-   "origin_country": "France",
+   "base": "z-ai/glm-4.7",
+   "developer": "Z.ai (Zhipu AI)",
+   "origin": "China",
+   "origin_country": "China",
    "weights": "open",
-   "confidence": "high",
-   "note": "Mistral-Large-Instruct-2407 weights on Hugging Face under Mistral Research License"
+   "confidence": "high"
   },
   {
-   "base": "deepseek/deepseek-r1-distill-llama-8b",
-   "developer": "DeepSeek",
+   "base": "z-ai/glm-4.7-flash",
+   "developer": "Zhipu AI (Z.ai)",
    "origin": "China",
    "origin_country": "China",
    "weights": "open",
    "confidence": "high",
-   "note": "Official DeepSeek distillation onto Llama 3.1 8B; developed and released by DeepSeek, not a community finetune"
+   "note": "GLM-4.7-Flash, open weights on Hugging Face (zai-org/GLM-4.7-Flash)."
   },
   {
-   "base": "openai/o1-mini",
-   "developer": "OpenAI",
-   "origin": "US",
-   "origin_country": "United States",
+   "base": "z-ai/glm-5",
+   "developer": "Zhipu AI (Z.ai)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo zai-org/GLM-5; Epoch exact: open weights (unrestricted)"
+  },
+  {
+   "base": "z-ai/glm-5-turbo",
+   "developer": "Z.ai (Zhipu AI)",
+   "origin": "China",
+   "origin_country": "China",
    "weights": "closed",
-   "confidence": "high"
+   "confidence": "low",
+   "note": "GLM-5 base is open-weight, but GLM-5 Turbo appears to be a proprietary API-only companion model (no HF release found); single secondary source, needs verification"
+  },
+  {
+   "base": "z-ai/glm-5.1",
+   "developer": "Zhipu AI (Z.ai)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "HF repo zai-org/GLM-5.1"
+  },
+  {
+   "base": "z-ai/glm-5.2",
+   "developer": "Z.ai (Zhipu AI)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "high",
+   "note": "Epoch exact match, open weights unrestricted; HF repo zai-org/GLM-5.2"
+  },
+  {
+   "base": "z-ai/glm-5v-turbo",
+   "developer": "Z.ai (Zhipu AI)",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "low",
+   "note": "Reported as proprietary API-only at April 2026 launch (unlike open-weight GLM-5/5.1/5.2); low confidence in case weights were released later"
   }
  ]
 }
