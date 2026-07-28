@@ -8,9 +8,10 @@
 //   origin:   org-level lookup in data/org-origins.json (derived from the
 //             reviewed baseline). Unknown orgs -> "Unknown" and flagged.
 //
-// Existing entries are NEVER modified — to correct a model (e.g., a stealth
-// reveal or a weight release after launch), edit model-classification.json
-// directly; this script only appends. Auto entries carry confidence "auto".
+// Reviewed entries (confidence "high") are NEVER modified — to correct one,
+// edit model-classification.json directly. Machine-classified ("auto") and
+// provisional ("low") entries are re-checked each run for a post-launch weight
+// release; everything else this script does is append-only.
 //
 // Usage: node scripts/classify.mjs
 
@@ -50,16 +51,21 @@ for (const m of catalog) {
 
 const today = new Date().toISOString().slice(0, 10);
 
-// Re-check auto entries: a model that launched API-only may publish weights
-// later (hugging_face_id appears in the catalog after release). Only
-// confidence "auto" entries are revisited — manual edits are never touched.
+// Re-check unsettled entries: a model that launched API-only may publish
+// weights later (hugging_face_id appears in the catalog after release).
+// "auto" = machine-classified; "low" = provisional, recorded as expected to
+// change. Reviewed "high" entries are never revisited.
+const RECHECKABLE = new Set(['auto', 'low']);
 const upgraded = [];
 for (const m of classification.models) {
-  if (m.confidence !== 'auto' || m.weights === 'open') continue;
+  if (!RECHECKABLE.has(m.confidence) || m.weights === 'open') continue;
   const cat = catalogByBase.get(m.base);
   if (cat && cat.hugging_face_id) {
     m.weights = 'open';
-    m.note = `auto-classified ${today}: weights released post-launch (hugging_face_id ${cat.hugging_face_id})`;
+    // A provisional call is now settled by catalog ground truth; a machine
+    // classification stays machine-classified.
+    if (m.confidence === 'low') m.confidence = 'high';
+    m.note = `weights released post-launch, confirmed ${today} (hugging_face_id ${cat.hugging_face_id})`;
     upgraded.push(m);
   }
 }
@@ -127,7 +133,7 @@ if (added.length) {
   for (const e of added) console.log(line(e));
 }
 if (upgraded.length) {
-  console.log(`Upgraded ${upgraded.length} auto entr${upgraded.length === 1 ? 'y' : 'ies'} to open (weights released post-launch):`);
+  console.log(`Upgraded ${upgraded.length} entr${upgraded.length === 1 ? 'y' : 'ies'} to open (weights released post-launch):`);
   for (const e of upgraded) console.log(line(e));
 }
 if (review.length) console.log(`\n${review.length} entr${review.length === 1 ? 'y needs' : 'ies need'} manual review.`);

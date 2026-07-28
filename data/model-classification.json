@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-26",
+ "generated": "2026-07-28",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1358,9 +1358,9 @@
    "developer": "Moonshot AI",
    "origin": "China",
    "origin_country": "China",
-   "weights": "closed",
-   "confidence": "low",
-   "note": "Released July 16, 2026 via API; open-weight release committed for July 27, 2026 but weights not downloadable as of July 24 — will flip to open days after this classification"
+   "weights": "open",
+   "confidence": "high",
+   "note": "weights released post-launch, confirmed 2026-07-28 (hugging_face_id moonshotai/Kimi-K3)"
   },
   {
    "base": "neversleep/llama-3-lumimaid-8b",
