@@ -62,7 +62,8 @@ const days = dates.map((date) =>
 const other = dates.map((date) => otherByDate.get(date) || 0);
 
 const payload = {
-  generated: classification.generated,
+  built: new Date().toISOString().slice(0, 10),
+  classified: classification.generated,
   source: 'https://openrouter.ai/api/v1/datasets/rankings-daily',
   dates,
   models,

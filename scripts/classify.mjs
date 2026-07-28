@@ -35,11 +35,6 @@ const classification = JSON.parse(readFileSync(clsPath, 'utf8'));
 const known = new Set(classification.models.map((m) => m.base));
 const missing = [...bases].filter((b) => !known.has(b)).sort();
 
-if (missing.length === 0) {
-  console.log(`All ${bases.size} ranked models classified — nothing to do.`);
-  process.exit(0);
-}
-
 const orgMap = JSON.parse(readFileSync(join(dataDir, 'org-origins.json'), 'utf8'));
 
 // Live catalog: openness ground truth for currently listed models.
@@ -54,6 +49,26 @@ for (const m of catalog) {
 }
 
 const today = new Date().toISOString().slice(0, 10);
+
+// Re-check auto entries: a model that launched API-only may publish weights
+// later (hugging_face_id appears in the catalog after release). Only
+// confidence "auto" entries are revisited — manual edits are never touched.
+const upgraded = [];
+for (const m of classification.models) {
+  if (m.confidence !== 'auto' || m.weights === 'open') continue;
+  const cat = catalogByBase.get(m.base);
+  if (cat && cat.hugging_face_id) {
+    m.weights = 'open';
+    m.note = `auto-classified ${today}: weights released post-launch (hugging_face_id ${cat.hugging_face_id})`;
+    upgraded.push(m);
+  }
+}
+
+if (missing.length === 0 && upgraded.length === 0) {
+  console.log(`All ${bases.size} ranked models classified — nothing to do.`);
+  process.exit(0);
+}
+
 const added = [];
 const review = [];
 
@@ -107,15 +122,22 @@ classification.models.sort((a, b) => a.base.localeCompare(b.base));
 writeFileSync(clsPath, JSON.stringify(classification, null, 1));
 
 const line = (e) => `- \`${e.base}\` -> ${e.weights}, ${e.origin} (${e.note.replace(/^auto-classified [\d-]+: /, '')})`;
-console.log(`Auto-classified ${added.length} new model(s):`);
-for (const e of added) console.log(line(e));
+if (added.length) {
+  console.log(`Auto-classified ${added.length} new model(s):`);
+  for (const e of added) console.log(line(e));
+}
+if (upgraded.length) {
+  console.log(`Upgraded ${upgraded.length} auto entr${upgraded.length === 1 ? 'y' : 'ies'} to open (weights released post-launch):`);
+  for (const e of upgraded) console.log(line(e));
+}
 if (review.length) console.log(`\n${review.length} entr${review.length === 1 ? 'y needs' : 'ies need'} manual review.`);
 
 if (process.env.GITHUB_STEP_SUMMARY) {
   appendFileSync(
     process.env.GITHUB_STEP_SUMMARY,
-    `### Model classification\n\nAuto-classified **${added.length}** new model(s):\n\n` +
-      added.map(line).join('\n') +
-      (review.length ? `\n\n⚠️ **${review.length} need manual review** — edit \`data/model-classification.json\`.\n` : '\n'),
+    `### Model classification\n\n` +
+      (added.length ? `Auto-classified **${added.length}** new model(s):\n\n${added.map(line).join('\n')}\n\n` : '') +
+      (upgraded.length ? `Upgraded **${upgraded.length}** to open (weights released post-launch):\n\n${upgraded.map(line).join('\n')}\n\n` : '') +
+      (review.length ? `⚠️ **${review.length} need manual review** — edit \`data/model-classification.json\`.\n` : ''),
   );
 }
