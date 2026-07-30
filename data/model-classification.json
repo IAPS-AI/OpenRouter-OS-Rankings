@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-28",
+ "generated": "2026-07-30",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -2382,6 +2382,15 @@
    "weights": "closed",
    "confidence": "high",
    "note": "Qwen Plus line is API-only; Epoch lists Qwen 3.6 Plus as API access"
+  },
+  {
+   "base": "qwen/qwen3.7-flash",
+   "developer": "Qwen",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-07-30: no hugging_face_id in catalog"
   },
   {
    "base": "qwen/qwen3.7-max",
