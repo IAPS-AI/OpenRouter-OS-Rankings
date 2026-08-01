@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-30",
+ "generated": "2026-08-01",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1694,6 +1694,15 @@
    "weights": "closed",
    "confidence": "high",
    "note": "Epoch exact match, API access, released 2026-07-09"
+  },
+  {
+   "base": "openai/gpt-5.6-luna-pro",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-08-01: no hugging_face_id in catalog"
   },
   {
    "base": "openai/gpt-5.6-sol",
