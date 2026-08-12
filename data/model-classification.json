@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-07",
+ "generated": "2026-08-12",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1466,6 +1466,15 @@
    "weights": "open",
    "confidence": "high",
    "note": "HF repo nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16; Epoch: open weights"
+  },
+  {
+   "base": "nvidia/nemotron-3.5-lightning",
+   "developer": "NVIDIA",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "open",
+   "confidence": "auto",
+   "note": "auto-classified 2026-08-12: hugging_face_id nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
   },
   {
    "base": "nvidia/nemotron-nano-12b-v2-vl",
