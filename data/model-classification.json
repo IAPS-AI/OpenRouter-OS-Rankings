@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-15",
+ "generated": "2026-08-16",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1399,6 +1399,15 @@
    "finetune_of": "DeepSeek V3.1",
    "confidence": "high",
    "note": "Post-trained DeepSeek-V3.1 by Nex-AGI (Shanghai); weights on HF (nex-agi/DeepSeek-V3.1-Nex-N1)."
+  },
+  {
+   "base": "nex-agi/nex-n2-mini",
+   "developer": "Nex AGI",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "auto",
+   "note": "auto-classified 2026-08-16: hugging_face_id nex-agi/Nex-N2-Mini"
   },
   {
    "base": "nex-agi/nex-n2-pro",
