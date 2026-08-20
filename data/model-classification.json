@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16",
+ "generated": "2026-08-20",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -2851,6 +2851,15 @@
    "weights": "open",
    "confidence": "high",
    "note": "Epoch exact match, open weights unrestricted; HF repo zai-org/GLM-5.2"
+  },
+  {
+   "base": "z-ai/glm-5.3",
+   "developer": "Z.ai",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-08-20: no hugging_face_id in catalog"
   },
   {
    "base": "z-ai/glm-5v-turbo",
