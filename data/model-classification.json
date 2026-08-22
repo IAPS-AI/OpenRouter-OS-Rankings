@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-21",
+ "generated": "2026-08-22",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -2529,6 +2529,15 @@
    "weights": "open",
    "confidence": "high",
    "note": "Embedding model; MiniLM-based sentence encoder, weights on Hugging Face"
+  },
+  {
+   "base": "stealth/ox-alpha",
+   "developer": "stealth",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-08-22: no hugging_face_id in catalog | REVIEW: org \"stealth\" not in org-origins.json"
   },
   {
    "base": "stepfun/step-3.5-flash",
