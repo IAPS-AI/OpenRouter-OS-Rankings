@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-27",
+ "generated": "2026-08-28",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -458,6 +458,15 @@
    "weights": "open",
    "confidence": "high",
    "note": "Epoch exact match, open weights unrestricted"
+  },
+  {
+   "base": "dots-studio/dots-3-note-preview",
+   "developer": "Dots Studio",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-08-28: no hugging_face_id in catalog | REVIEW: org \"dots-studio\" not in org-origins.json"
   },
   {
    "base": "google/gemini-2.0-flash-001",
@@ -2623,6 +2632,15 @@
    "note": "Community finetune of Mistral Nemo 12B; origin follows base developer (Mistral AI, France)"
   },
   {
+   "base": "thinkingmachines/inkling",
+   "developer": "Thinking Machines",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "open",
+   "confidence": "auto",
+   "note": "auto-classified 2026-08-28: hugging_face_id thinkingmachines/Inkling | REVIEW: org \"thinkingmachines\" not in org-origins.json"
+  },
+  {
    "base": "tngtech/deepseek-r1t-chimera",
    "developer": "TNG Technology Consulting",
    "origin": "China",
@@ -2902,9 +2920,9 @@
    "developer": "Z.ai",
    "origin": "China",
    "origin_country": "China",
-   "weights": "closed",
+   "weights": "open",
    "confidence": "auto",
-   "note": "auto-classified 2026-08-20: no hugging_face_id in catalog"
+   "note": "weights released post-launch, confirmed 2026-08-28 (hugging_face_id zai-org/GLM-5.3)"
   },
   {
    "base": "z-ai/glm-5.3-flash",
