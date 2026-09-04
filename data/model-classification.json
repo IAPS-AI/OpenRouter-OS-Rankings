@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-03",
+ "generated": "2026-09-04",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1095,6 +1095,24 @@
    "weights": "closed",
    "confidence": "auto",
    "note": "auto-classified 2026-08-24: no hugging_face_id in catalog | REVIEW: org \"meta\" not in org-origins.json"
+  },
+  {
+   "base": "meta/muse-spark-1.3",
+   "developer": "Meta",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-04: no hugging_face_id in catalog | REVIEW: org \"meta\" not in org-origins.json"
+  },
+  {
+   "base": "meta/muse-spark-1.3-contributor",
+   "developer": "Meta",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-04: no hugging_face_id in catalog | REVIEW: org \"meta\" not in org-origins.json"
   },
   {
    "base": "microsoft/mai-ds-r1",
