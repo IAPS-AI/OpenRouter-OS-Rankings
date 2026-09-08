@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-06",
+ "generated": "2026-09-08",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -2688,9 +2688,9 @@
    "developer": "Tencent",
    "origin": "China",
    "origin_country": "China",
-   "weights": "closed",
+   "weights": "open",
    "confidence": "auto",
-   "note": "auto-classified 2026-08-29: no hugging_face_id in catalog"
+   "note": "weights released post-launch, confirmed 2026-09-08 (hugging_face_id tencent/Hy4-preview)"
   },
   {
    "base": "thedrummer/rocinante-12b",
