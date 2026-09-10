@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08",
+ "generated": "2026-09-10",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1508,6 +1508,15 @@
    "finetune_of": "Qwen3.5",
    "confidence": "high",
    "note": "Apache 2.0 on HF; post-trained on Alibaba's Qwen3.5-397B-A17B base"
+  },
+  {
+   "base": "nex-agi/nex-n2.5-pro",
+   "developer": "Nex AGI",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-10: hugging_face_id nex-agi/Nex-N2.5-Pro"
   },
   {
    "base": "nousresearch/hermes-2-pro-llama-3-8b",
