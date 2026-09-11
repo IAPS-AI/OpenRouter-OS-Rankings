@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-10",
+ "generated": "2026-09-11",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -467,6 +467,15 @@
    "weights": "open",
    "confidence": "high",
    "note": "Epoch exact match, open weights unrestricted"
+  },
+  {
+   "base": "deepseek/deepseek-v4.1-flash",
+   "developer": "DeepSeek",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-11: hugging_face_id deepseek-ai/DeepSeek-V4.1-Flash"
   },
   {
    "base": "dots-studio/dots-3-note-preview",
