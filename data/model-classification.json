@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-19",
+ "generated": "2026-09-23",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1893,6 +1893,15 @@
    "note": "auto-classified 2026-09-06: no hugging_face_id in catalog"
   },
   {
+   "base": "openai/gpt-6-luna",
+   "developer": "OpenAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-23: no hugging_face_id in catalog"
+  },
+  {
    "base": "openai/gpt-oss-120b",
    "developer": "OpenAI",
    "origin": "US",
@@ -2903,6 +2912,15 @@
    "note": "auto-classified 2026-08-14: no hugging_face_id in catalog"
   },
   {
+   "base": "x-ai/grok-4.7",
+   "developer": "SpaceXAI",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-23: no hugging_face_id in catalog"
+  },
+  {
    "base": "x-ai/grok-code-fast-1",
    "developer": "xAI",
    "origin": "US",
@@ -2955,6 +2973,24 @@
    "weights": "open",
    "confidence": "high",
    "note": "HF repo XiaomiMiMo/MiMo-V2.5-Pro, MIT license; Epoch exact: open weights (unrestricted)"
+  },
+  {
+   "base": "xiaomi/mimo-v2.6-flash",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-23: hugging_face_id XiaomiMiMo/MiMo-V2.6-Flash-RL"
+  },
+  {
+   "base": "xiaomi/mimo-v2.6-pro",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "open",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-23: hugging_face_id XiaomiMiMo/MiMo-V2.6-Pro-RL"
   },
   {
    "base": "z-ai/glm-4.5",
@@ -3058,6 +3094,15 @@
    "weights": "open",
    "confidence": "auto",
    "note": "auto-classified 2026-08-27: hugging_face_id zai-org/GLM-5.3-Flash"
+  },
+  {
+   "base": "z-ai/glm-5.3-flashx",
+   "developer": "Z.ai",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-09-23: no hugging_face_id in catalog"
   },
   {
    "base": "z-ai/glm-5v-turbo",
