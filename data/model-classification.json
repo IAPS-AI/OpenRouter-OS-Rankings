@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01",
+ "generated": "2026-10-03",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -2858,6 +2858,15 @@
    "weights": "unknown",
    "confidence": "auto",
    "note": "auto-classified 2026-09-19: not in live catalog (delisted?) — review manually | REVIEW: weights unresolved; org \"typesafe\" not in org-origins.json"
+  },
+  {
+   "base": "upstage/solar-mini4",
+   "developer": "Upstage",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-10-03: no hugging_face_id in catalog | REVIEW: org \"upstage\" not in org-origins.json"
   },
   {
    "base": "upstage/solar-pro4",
