@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-09",
+ "generated": "2026-10-13",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1388,6 +1388,15 @@
    "note": "Mistral Large 3 (675B MoE) released under Apache 2.0 with downloadable weights per catalog description"
   },
   {
+   "base": "mistralai/mistral-large-4-0",
+   "developer": "Mistral",
+   "origin": "Other",
+   "origin_country": "France",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-10-13: no hugging_face_id in catalog"
+  },
+  {
    "base": "mistralai/mistral-medium-3.5",
    "developer": "Mistral AI",
    "origin": "Other",
@@ -2244,6 +2253,15 @@
    "weights": "closed",
    "confidence": "high",
    "note": "Stealth model revealed as xAI's Grok 4 Fast (Sept 2025); API-only"
+  },
+  {
+   "base": "perplexity/pplx-decider-v1.1-27b",
+   "developer": "Perplexity",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "unknown",
+   "confidence": "auto",
+   "note": "auto-classified 2026-10-13: not in live catalog (delisted?) — review manually | REVIEW: weights unresolved"
   },
   {
    "base": "perplexity/pplx-embed-v1-0.6B",
