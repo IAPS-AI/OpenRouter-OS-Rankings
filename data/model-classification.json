@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17",
+ "generated": "2026-10-18",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -3135,6 +3135,15 @@
    "weights": "open",
    "confidence": "auto",
    "note": "auto-classified 2026-09-23: hugging_face_id XiaomiMiMo/MiMo-V2.6-Pro-RL"
+  },
+  {
+   "base": "xiaomi/mimo-v2.6-pro-ultraspeed",
+   "developer": "Xiaomi",
+   "origin": "China",
+   "origin_country": "China",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-10-18: no hugging_face_id in catalog"
   },
   {
    "base": "z-ai/glm-4.5",
