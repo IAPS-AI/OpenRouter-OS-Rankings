@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28",
+ "generated": "2026-10-30",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -1419,9 +1419,9 @@
    "developer": "Mistral",
    "origin": "Other",
    "origin_country": "France",
-   "weights": "closed",
+   "weights": "open",
    "confidence": "auto",
-   "note": "auto-classified 2026-10-13: no hugging_face_id in catalog"
+   "note": "weights released post-launch, confirmed 2026-10-30 (hugging_face_id mistralai/Mistral-Large-4-1T-A52B)"
   },
   {
    "base": "mistralai/mistral-medium-3.5",
@@ -2325,6 +2325,15 @@
    "weights": "unknown",
    "confidence": "auto",
    "note": "auto-classified 2026-10-13: not in live catalog (delisted?) — review manually | REVIEW: weights unresolved"
+  },
+  {
+   "base": "perplexity/pplx-decider-v1.2",
+   "developer": "Perplexity",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "unknown",
+   "confidence": "auto",
+   "note": "auto-classified 2026-10-30: not in live catalog (delisted?) — review manually | REVIEW: weights unresolved"
   },
   {
    "base": "perplexity/pplx-embed-v1-0.6B",
