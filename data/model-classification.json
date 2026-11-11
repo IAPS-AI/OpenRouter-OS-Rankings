@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05",
+ "generated": "2026-11-11",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -194,6 +194,15 @@
    "weights": "closed",
    "confidence": "auto",
    "note": "auto-classified 2026-09-03: no hugging_face_id in catalog"
+  },
+  {
+   "base": "anthropic/claude-fable-5.2",
+   "developer": "Anthropic",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-11-11: no hugging_face_id in catalog"
   },
   {
    "base": "anthropic/claude-haiku-5.5",
@@ -509,9 +518,9 @@
    "developer": "Dots Studio",
    "origin": "Unknown",
    "origin_country": "Unknown",
-   "weights": "closed",
+   "weights": "open",
    "confidence": "auto",
-   "note": "auto-classified 2026-08-28: no hugging_face_id in catalog | REVIEW: org \"dots-studio\" not in org-origins.json"
+   "note": "weights released post-launch, confirmed 2026-11-11 (hugging_face_id dots-studio/dots3-note-prev)"
   },
   {
    "base": "google/gemini-2.0-flash-001",
@@ -975,9 +984,9 @@
    "developer": "inclusionAI",
    "origin": "China",
    "origin_country": "China",
-   "weights": "closed",
+   "weights": "open",
    "confidence": "auto",
-   "note": "auto-classified 2026-10-04: no hugging_face_id in catalog"
+   "note": "weights released post-launch, confirmed 2026-11-11 (hugging_face_id inclusionAI/Ling-3.1-flash)"
   },
   {
    "base": "inclusionai/ring-2.6-1t",
@@ -1140,6 +1149,15 @@
    "weights": "open",
    "confidence": "high",
    "note": "Safety classifier based on Llama 3.1 8B, weights on HF"
+  },
+  {
+   "base": "meta/muse-ember",
+   "developer": "Meta",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-11-11: no hugging_face_id in catalog | REVIEW: org \"meta\" not in org-origins.json"
   },
   {
    "base": "meta/muse-spark-1.1",
@@ -2954,6 +2972,15 @@
    "weights": "open",
    "confidence": "auto",
    "note": "auto-classified 2026-08-28: hugging_face_id thinkingmachines/Inkling | REVIEW: org \"thinkingmachines\" not in org-origins.json"
+  },
+  {
+   "base": "thinkingmachines/inkling-2-small",
+   "developer": "Thinking Machines",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-11-11: no hugging_face_id in catalog | REVIEW: org \"thinkingmachines\" not in org-origins.json"
   },
   {
    "base": "tngtech/deepseek-r1t-chimera",
