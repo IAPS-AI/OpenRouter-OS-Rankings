@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-12",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -274,6 +274,15 @@
    "weights": "open",
    "confidence": "high",
    "note": "Open-weight embedding model (BAAI/bge-m3 on Hugging Face, MIT license); catalog entry delisted"
+  },
+  {
+   "base": "baidu/ernie-5.5-flash-preview",
+   "developer": "Baidu",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "open",
+   "confidence": "auto",
+   "note": "auto-classified 2026-11-12: hugging_face_id baidu/ERNIE-5.5-Flash-Preview | REVIEW: org \"baidu\" not in org-origins.json"
   },
   {
    "base": "bytedance-seed/seed-2.0-mini",
@@ -781,6 +790,15 @@
    "weights": "closed",
    "confidence": "auto",
    "note": "auto-classified 2026-10-15: no hugging_face_id in catalog"
+  },
+  {
+   "base": "google/gemini-4-carbon",
+   "developer": "Google",
+   "origin": "US",
+   "origin_country": "United States",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-11-12: no hugging_face_id in catalog"
   },
   {
    "base": "google/gemini-embedding-001",
