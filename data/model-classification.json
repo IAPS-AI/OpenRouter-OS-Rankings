@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12",
+ "generated": "2026-11-13",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -2996,9 +2996,9 @@
    "developer": "Thinking Machines",
    "origin": "Unknown",
    "origin_country": "Unknown",
-   "weights": "closed",
+   "weights": "open",
    "confidence": "auto",
-   "note": "auto-classified 2026-11-11: no hugging_face_id in catalog | REVIEW: org \"thinkingmachines\" not in org-origins.json"
+   "note": "weights released post-launch, confirmed 2026-11-13 (hugging_face_id thinkingmachines/Inkling-2-Small)"
   },
   {
    "base": "tngtech/deepseek-r1t-chimera",
