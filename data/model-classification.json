@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13",
+ "generated": "2026-11-15",
  "method": "Classified by multi-agent pass over OpenRouter catalog metadata (hugging_face_id), Epoch AI benchmarked_models.csv (exact/fuzzy joins), and targeted web verification. weights: open = weights publicly downloadable as of the generated date; origin = country of the developing organization (community finetunes inherit the base-model developer country; openrouter/* stealth models classified per public reveal).",
  "sources": [
   "https://openrouter.ai/api/v1/datasets/rankings-daily",
@@ -2352,6 +2352,15 @@
    "weights": "closed",
    "confidence": "high",
    "note": "Stealth model revealed as xAI's Grok 4 Fast (Sept 2025); API-only"
+  },
+  {
+   "base": "particle-ai/particle-1",
+   "developer": "Particle AI",
+   "origin": "Unknown",
+   "origin_country": "Unknown",
+   "weights": "closed",
+   "confidence": "auto",
+   "note": "auto-classified 2026-11-15: no hugging_face_id in catalog | REVIEW: org \"particle-ai\" not in org-origins.json"
   },
   {
    "base": "perplexity/pplx-decider-v1.1-27b",
